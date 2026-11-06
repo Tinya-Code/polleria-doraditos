@@ -1,0 +1,71 @@
+{
+  "data": {
+    "blocks": [
+      {
+        "id": "block-1",
+        "categories": [
+          {
+            "id": "cat-signature",
+            "name": "Signature Dishes",
+            "description": "Chef's special creations",
+            "block_id": "block-1",
+            "products": [
+              { "id": "sig-truffle-risotto", "name": "Truffle Risotto", "description": "Arborio rice, black truffle, parmesan, white wine cream", "image": { "url": "https://picsum.photos/seed/bistro-risotto/600/400", "alt": "Truffle Risotto — Bistro & Brasa" }, "price": 24, "price_range": { "id": "r-sig-truffle-risotto", "name": "Portions", "entries": [ { "qty": 1, "price": 24, "label": "Regular" }, { "qty": 1, "price": 34, "label": "Large" } ], "min_price": 24, "max_price": 34 }, "qty_label": null, "is_recommended": true, "is_hidden": false, "category_id": "cat-signature" },
+              { "id": "sig-sea-bass", "name": "Pan-Seared Sea Bass", "description": "Atlantic sea bass, lemon beurre blanc, asparagus", "image": { "url": "https://picsum.photos/seed/bistro-seabass/600/400", "alt": "Pan-Seared Sea Bass — Bistro & Brasa" }, "price": 28, "price_range": { "id": "r-sig-sea-bass", "name": "Portions", "entries": [ { "qty": 1, "price": 28, "label": "Regular" }, { "qty": 1, "price": 38, "label": "Large" } ], "min_price": 28, "max_price": 38 }, "qty_label": null, "is_recommended": true, "is_hidden": false, "category_id": "cat-signature" },
+              { "id": "sig-wagyu-burger", "name": "Wagyu Burger", "description": "Wagyu patty, brioche, aged cheddar, caramelized onions", "image": { "url": "https://picsum.photos/seed/bistro-burger/600/400", "alt": "Wagyu Burger — Bistro & Brasa" }, "price": 18, "price_range": { "id": "r-sig-wagyu-burger", "name": "Portions", "entries": [ { "qty": 1, "price": 18, "label": "Single" }, { "qty": 1, "price": 26, "label": "Double" } ], "min_price": 18, "max_price": 26 }, "qty_label": null, "is_recommended": true, "is_hidden": false, "category_id": "cat-signature" }
+            ]
+          },
+          {
+            "id": "cat-pasta",
+            "name": "Pasta & Risotto",
+            "description": "Handmade pasta classics",
+            "block_id": "block-1",
+            "products": [
+              { "id": "pasta-carbonara", "name": "Classic Carbonara", "description": "Spaghetti, guanciale, pecorino, egg yolk, black pepper", "image": { "url": "https://picsum.photos/seed/bistro-carbonara/600/400", "alt": "Classic Carbonara — Bistro & Brasa" }, "price": 16, "price_range": { "id": "r-pasta-carbonara", "name": "Portions", "entries": [ { "qty": 1, "price": 16, "label": "Regular" }, { "qty": 1, "price": 22, "label": "Large" } ], "min_price": 16, "max_price": 22 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-pasta" },
+              { "id": "pasta-pesto", "name": "Pesto Genovese", "description": "Trofie pasta, basil pesto, pine nuts, parmesan", "image": { "url": "https://picsum.photos/seed/bistro-pesto/600/400", "alt": "Pesto Genovese — Bistro & Brasa" }, "price": 15, "price_range": { "id": "r-pasta-pesto", "name": "Portions", "entries": [ { "qty": 1, "price": 15, "label": "Regular" }, { "qty": 1, "price": 21, "label": "Large" } ], "min_price": 15, "max_price": 21 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-pasta" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "block-2",
+        "categories": [
+          {
+            "id": "cat-starters",
+            "name": "Starters",
+            "description": "To share or to start",
+            "block_id": "block-2",
+            "products": [
+              { "id": "st-burrata", "name": "Burrata & Heirloom Tomatoes", "description": "Creamy burrata, heirloom tomatoes, basil oil, toasted bread", "image": { "url": "https://picsum.photos/seed/bistro-burrata/600/400", "alt": "Burrata & Heirloom Tomatoes — Bistro & Brasa" }, "price": 12, "price_range": { "id": "r-st-burrata", "name": "Portions", "entries": [ { "qty": 1, "price": 12, "label": "Regular" } ], "min_price": 12, "max_price": 12 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-starters" },
+              { "id": "st-calamari", "name": "Crispy Calamari", "description": "Flash-fried calamari, aioli, lemon", "image": { "url": "https://picsum.photos/seed/bistro-calamari/600/400", "alt": "Crispy Calamari — Bistro & Brasa" }, "price": 10, "price_range": { "id": "r-st-calamari", "name": "Portions", "entries": [ { "qty": 1, "price": 10, "label": "Regular" }, { "qty": 1, "price": 16, "label": "Large" } ], "min_price": 10, "max_price": 16 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-starters" }
+            ]
+          },
+          {
+            "id": "cat-salads",
+            "name": "Salads",
+            "description": "Fresh and seasonal",
+            "block_id": "block-2",
+            "products": [
+              { "id": "sal-caesar", "name": "Caesar Salad", "description": "Romaine, parmesan, croutons, caesar dressing", "image": { "url": "https://picsum.photos/seed/bistro-caesar/600/400", "alt": "Caesar Salad — Bistro & Brasa" }, "price": 9, "price_range": { "id": "r-sal-caesar", "name": "Portions", "entries": [ { "qty": 1, "price": 9, "label": "Regular" }, { "qty": 1, "price": 14, "label": "Large" } ], "min_price": 9, "max_price": 14 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-salads" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "block-6",
+        "categories": [
+          {
+            "id": "cat-desserts",
+            "name": "Desserts",
+            "description": "Sweet endings",
+            "block_id": "block-6",
+            "products": [
+              { "id": "des-tiramisu", "name": "Classic Tiramisu", "description": "Ladyfingers, espresso, mascarpone, cocoa", "image": { "url": "https://picsum.photos/seed/bistro-tiramisu/600/400", "alt": "Classic Tiramisu — Bistro & Brasa" }, "price": 8, "price_range": { "id": "r-des-tiramisu", "name": "Portions", "entries": [ { "qty": 1, "price": 8, "label": "Regular" } ], "min_price": 8, "max_price": 8 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-desserts" },
+              { "id": "des-cheesecake", "name": "New York Cheesecake", "description": "Cream cheese, graham crust, berry compote", "image": { "url": "https://picsum.photos/seed/bistro-cheesecake/600/400", "alt": "New York Cheesecake — Bistro & Brasa" }, "price": 8, "price_range": { "id": "r-des-cheesecake", "name": "Portions", "entries": [ { "qty": 1, "price": 8, "label": "Regular" } ], "min_price": 8, "max_price": 8 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-desserts" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

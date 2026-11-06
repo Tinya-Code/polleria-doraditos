@@ -1,0 +1,65 @@
+{
+  "data": {
+    "name": "Bistro & Brasa",
+    "phone": "+1 555 0100",
+    "address": "Av. Gastronómica 456, Ciudad Moderna",
+    "geo": { "lat": 40.7128, "lng": -74.006 },
+    "whatsapp": {
+      "number": "+1 555 0101",
+      "message_template": "Hi, I'd like to place an order:",
+      "contacts": [
+        { "label": "Orders", "number": "+1 555 0101", "description": "Place your order via WhatsApp" },
+        { "label": "Reservations", "number": "+1 555 0102", "description": "Book a table" },
+        { "label": "Questions", "number": "+1 555 0103", "description": "Menu and allergy questions" }
+      ]
+    },
+    "timezone": "America/New_York",
+    "currency": "USD",
+    "language": "en",
+    "delivery": {
+      "enabled": true,
+      "fee": 4.99,
+      "charge_delivery": true,
+      "zones": [
+        { "id": "downtown", "name": "Downtown", "fee": 4.99 },
+        { "id": "uptown", "name": "Uptown", "fee": 6.99 },
+        { "id": "brooklyn", "name": "Brooklyn", "fee": 8.99 },
+        { "id": "queens", "name": "Queens", "fee": 7.99 }
+      ]
+    },
+    "payment_methods": ["apple_pay", "google_pay", "visa", "mastercard", "cash"],
+    "max_order_quantity": 30,
+    "social_media": {
+      "tiktok": "https://tiktok.com/@bistrobras",
+      "instagram": "https://instagram.com/bistrobras",
+      "facebook": ""
+    },
+    "google_maps": "https://maps.app.goo.gl/exampleMapsLink",
+    "business_hours": {
+      "mon": { "isOpen": true, "open": "11:30", "close": "22:00" },
+      "tue": { "isOpen": true, "open": "11:30", "close": "22:00" },
+      "wed": { "isOpen": true, "open": "11:30", "close": "22:00" },
+      "thu": { "isOpen": true, "open": "11:30", "close": "23:00" },
+      "fri": { "isOpen": true, "open": "11:30", "close": "23:30" },
+      "sat": { "isOpen": true, "open": "10:00", "close": "23:30" },
+      "sun": { "isOpen": true, "open": "10:00", "close": "21:00" }
+    },
+    "tags": ["signature", "chef-recommended", "spicy", "vegetarian-option"],
+    "seo": {
+      "site_name": "Bistro & Brasa",
+      "title": "Bistro & Brasa — Contemporary Dining & Delivery",
+      "title_template": "%s | Bistro & Brasa",
+      "description": "Contemporary cuisine, signature dishes, combos and drinks delivered to your door.",
+      "keywords": ["food delivery", "contemporary dining", "combo meals", "signature dishes"],
+      "og_image": "https://picsum.photos/seed/bistro-og/1200/630",
+      "twitter_card": "summary_large_image",
+      "locale": "en_US",
+      "canonical_url": null,
+      "json_ld": {
+        "@type": "Restaurant",
+        "servesCuisine": "Contemporary",
+        "priceRange": "$$"
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+---
+/**
+ * Block: video
+ * Embeds a video from YouTube, TikTok or Facebook via iframe,
+ * or plays a video hosted in the repo (public/ or src/assets/) via <video>.
+ *
+ * Provider parsing, aspect resolution and embed-URL building live in
+ * `../utils/video.ts` (shared with home-media, galeria and gallery-modal).
+ *
+ * Block fields:
+ *  - provider : 'youtube' | 'tiktok' | 'facebook' | 'local'   (aliases: 'self', 'repo', 'mp4' -> local)
+ *  - video_id : id OR full URL (youtube / tiktok / facebook). Full URLs are parsed automatically.
+ *  - src      : (local) path to the file. Examples:
+ *                 "/videos/demo.mp4"                 -> file in public/videos/demo.mp4
+ *                 "videos/demo.mp4"                  -> file in src/assets/videos/demo.mp4
+ *                 "https://cdn.example.com/a.mp4"    -> remote file
+ *  - src_webm : (local, optional) extra WebM source
+ *  - poster   : (local, optional) poster image path
+ *  - aspect   : '16:9' | '9:16' | '1:1' | '4:5'  (default: 9:16 for tiktok, 16:9 for the rest)
+ *  - autoplay, muted, loop, controls : booleans (autoplay forces muted, browsers require it)
+ *  - title, caption, id
+ */
+import {
+  normalizeProvider,
+  resolveAspect,
+  buildConfiguredEmbedUrl,
+  resolveFromAssets,
+  PROVIDER_LABELS,
+} from '../utils/video';
+
+const { block } = Astro.props;
+const {
+  title,
+  provider: rawProvider,
+  video_id,
+  src: localSrc,
+  src_webm,
+  poster,
+  aspect,
+  autoplay = false,
+  muted = false,
+  loop = false,
+  controls = true,
+  caption,
+  id,
+} = block;
+
+// ---------- Videos stored in src/assets/videos (processed by Vite) ----------
+const assetVideos = import.meta.glob('/src/assets/**/*.{mp4,webm,mov,m4v}', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+});
+
+const provider = normalizeProvider(rawProvider);
+const { cssAspect, vertical: isVertical } = resolveAspect(provider, aspect);
+
+// Autoplay only works if the video is muted
+const effectiveMuted = autoplay ? true : muted;
+
+const isLocal = provider === 'local';
+const resolvedSrc = isLocal ? resolveFromAssets(localSrc, assetVideos) : null;
+const resolvedWebm = isLocal ? resolveFromAssets(src_webm, assetVideos) : null;
+const resolvedPoster =
+  isLocal && poster ? (resolveFromAssets(poster, assetVideos) ?? poster) : undefined;
+const embedSrc = isLocal
+  ? null
+  : buildConfiguredEmbedUrl(provider, video_id, {
+      autoplay,
+      muted: effectiveMuted,
+      loop,
+      controls,
+    });
+
+const providerLabel = PROVIDER_LABELS[provider] ?? provider;
+
+const hasContent = isLocal ? Boolean(resolvedSrc) : Boolean(embedSrc);
+
+// Vertical videos shouldn't stretch across the full width on desktop
+const maxWidth = isVertical ? 'max-width: 360px;' : '';
+---
+
+{hasContent && (
+  <div data-block-video={id} class="space-y-2">
+    {title && (
+      <h2 class="text-base font-bold text-white px-0.5">{title}</h2>
+    )}
+
+    <div
+      class="relative w-full mx-auto rounded-2xl overflow-hidden border border-white/10 bg-black/30"
+      style={`aspect-ratio: ${cssAspect}; ${maxWidth}`}
+    >
+      {isLocal ? (
+        <video
+          class="absolute inset-0 w-full h-full object-contain bg-black"
+          controls={controls}
+          autoplay={autoplay}
+          muted={effectiveMuted}
+          loop={loop}
+          playsinline
+          preload={autoplay ? 'auto' : 'metadata'}
+          poster={resolvedPoster}
+          aria-label={title ?? 'Video'}
+        >
+          {resolvedWebm && <source src={resolvedWebm} type="video/webm" />}
+          <source src={resolvedSrc} type="video/mp4" />
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      ) : (
+        <iframe
+          src={embedSrc}
+          title={title ?? `${providerLabel} video`}
+          class="absolute inset-0 w-full h-full"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          frameborder="0"
+        />
+      )}
+    </div>
+
+    {caption && (
+      <p class="text-xs text-primary-text/50 px-0.5 leading-relaxed text-center">{caption}</p>
+    )}
+  </div>
+)}

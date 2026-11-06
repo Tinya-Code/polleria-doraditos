@@ -1,0 +1,23 @@
+{
+  "meta": { "title": "Contemporary dining, delivered", "tagline": "Signature dishes, combos, and drinks. Order now from Bistro & Brasa." },
+  "blocks": [
+    { "id": "hero-main", "type": "hero", "enabled": true, "title": null, "tagline": null, "show_hours_badge": true,
+      "background_video": { "enabled": true, "src": "https://www.w3schools.com/html/mov_bbb.mp4", "type": "video/mp4", "poster": null, "autoplay": true, "loop": true, "muted": true, "preload": "auto" },
+      "scroll_reveal": { "overlay_from": 0.15, "overlay_to": 0.7, "content_fade_px": 90, "overlay_range_vh": 45 },
+      "cta_whatsapp": { "enabled": true, "label": "Order on WhatsApp", "href": "whatsapp", "message": "Hi, I'd like to place an order 🍱" },
+      "cta_menu": { "enabled": true, "label": "View full menu", "href": "/menu" } },
+    { "id": "promotions-strip", "type": "promotions", "enabled": true, "title": "Promotions", "badge": "Offers", "max_items": 4, "see_all_label": "See all", "see_all_href": "/menu" },
+    { "id": "recommended-strip", "type": "recommended", "enabled": true, "title": "Recommended", "badge": "Chef's picks", "max_items": 10, "see_all_label": "View menu", "see_all_href": "/menu" },
+    { "id": "featured-media", "type": "media", "enabled": true, "title": "Featured", "badge": "New",
+      "items": [
+        { "id": "banner-weekend-promo", "type": "banner", "enabled": true, "layout": "full", "image_url": "https://picsum.photos/seed/promo_weekend/800/600", "alt": "Weekend Promo — Bistro & Brasa", "title": "Weekend Special!", "description": "20% off all signature dishes, Saturdays & Sundays.", "min_height": "260px", "cta_label": "Order now", "cta_href": "whatsapp", "cta_message": "Hi, I want the Weekend Special", "cta_target": "_blank" },
+        { "id": "video-kitchen-prep", "type": "video", "enabled": true, "layout": "half", "provider": "tiktok", "video_id": "demo_kitchen_prep_001", "title": "How we prepare our dishes", "caption": "Artisanal process behind every plate." }
+      ] },
+    { "id": "home-navigation", "type": "nav-cards", "enabled": true,
+      "cards": [
+        { "id": "card-menu", "icon": "utensils", "title": "View Menu", "description": "Explore our full selection of signature dishes, combos, and promotions.", "cta_label": "Explore menu", "href": "/menu" },
+        { "id": "card-galeria", "icon": "images", "title": "Gallery", "description": "Discover each dish and the artisanal presentation of our varieties.", "cta_label": "See photos", "href": "/galeria" },
+        { "id": "card-contacto", "icon": "share-2", "title": "Contact", "description": "WhatsApp orders, social media, hours, and map location.", "cta_label": "Contact", "href": "/enlaces" }
+      ] }
+  ]
+}

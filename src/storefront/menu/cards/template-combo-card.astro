@@ -1,0 +1,30 @@
+---
+/**
+ * TemplateComboCard — declarative combo design router.
+ *
+ * Combos carry no price range, so their `card` key IS the design (no state
+ * map): renders the combo's declared design, falling back to the default
+ * (`DEFAULT_COMBO_CARD_DESIGN`) when absent.
+ *
+ * Every design OWNS its root + the CLIENT CONTRACT `data-combo-card`,
+ * `data-combo` — the page's click delegation reads it (a combo never opens
+ * the product dialog). A design MUST carry both.
+ *
+ * Adding a design: see `registry.ts` (component → schema key → registry →
+ * reference it from any combo's `card` in combos.json).
+ */
+import { COMBO_CARD_REGISTRY, DEFAULT_COMBO_CARD_DESIGN } from './registry';
+import type { Combo } from '../../types/menu';
+
+interface Props {
+  combo: Combo;
+  canOrder?: boolean;
+}
+
+const { combo, canOrder = true } = Astro.props;
+
+const designKey = combo.card ?? DEFAULT_COMBO_CARD_DESIGN;
+const Design = COMBO_CARD_REGISTRY[designKey];
+---
+
+<Design combo={combo} canOrder={canOrder} />

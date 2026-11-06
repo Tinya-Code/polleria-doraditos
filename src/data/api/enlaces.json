@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "title": "Bistro & Brasa — Order Online",
+    "tagline": "Contemporary dining delivered to your door. Signature dishes, combos, and drinks.",
+    "logo_url": null,
+    "theme": "light"
+  },
+  "blocks": [
+    { "id": "cta-whatsapp", "type": "link", "enabled": true, "style": "primary", "label": "Order on WhatsApp", "sublabel": "Immediate attention and orders", "icon": "whatsapp", "href": "whatsapp", "target": "_blank" },
+    { "id": "cta-menu", "type": "link", "enabled": true, "style": "default", "label": "View Full Menu", "sublabel": "Signature dishes, combos, promotions", "icon": "utensils", "href": "/menu", "target": "_self" },
+    { "id": "banner-promo", "type": "banner", "enabled": true, "title": "Weekend Special Available!", "description": "20% off all signature dishes, Saturdays & Sundays.", "image_url": "https://picsum.photos/seed/bistro-banner-weekend/800/400", "cta_label": "Order now", "cta_href": "whatsapp", "cta_message": "Hi, I want the Weekend Special", "accent": "#ef4444" },
+    { "id": "carousel-recommended", "type": "product-carousel", "enabled": true, "title": "Recommended", "subtitle": "Swipe to see more", "filter": "recommended", "max_items": 8, "cta_label": "View full menu", "cta_href": "/menu" },
+    { "id": "video-kitchen", "type": "video", "enabled": true, "title": "Watch how we prepare them", "provider": "tiktok", "video_id": "demo_kitchen_001", "autoplay": false, "muted": false, "caption": "Artisanal process behind every plate." },
+    { "id": "social-instagram", "type": "link", "enabled": true, "style": "social", "label": "Instagram", "sublabel": "Photos, news, and promos", "icon": "instagram", "color": "instagram", "href": "instagram", "target": "_blank" },
+    { "id": "social-facebook", "type": "link", "enabled": true, "style": "social", "label": "Facebook", "sublabel": "Community and promotions", "icon": "facebook", "color": "facebook", "href": "facebook", "target": "_blank" },
+    { "id": "social-tiktok", "type": "link", "enabled": true, "style": "social", "label": "TikTok", "sublabel": "Videos and behind the scenes", "icon": "tiktok", "color": "tiktok", "href": "tiktok", "target": "_blank" },
+    { "id": "divider-gallery", "type": "divider", "enabled": true, "label": "Our Gallery" },
+    { "id": "gallery-preview", "type": "gallery-grid", "enabled": true, "title": "Gallery", "max_items": 6, "cta_label": "View full gallery", "cta_href": "/galeria" },
+    { "id": "maps-link", "type": "link", "enabled": true, "style": "default", "label": "How to get there (Google Maps)", "sublabel": "View location", "icon": "map-pin", "color": "amber", "href": "google_maps", "target": "_blank" },
+    { "id": "phone-link", "type": "link", "enabled": true, "style": "default", "label": "Call us", "sublabel": "phone", "icon": "phone", "color": "neutral", "href": "tel", "target": "_self" }
+  ]
+}

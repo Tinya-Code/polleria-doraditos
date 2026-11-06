@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "id": "promo-happy-hour",
+      "slug": "happy-hour-drinks",
+      "name": "Happy Hour Drinks",
+      "description": "2x1 on cocktails and wine, Mon–Fri 4–7 PM",
+      "includes": ["Cocktails", "House Wine"],
+      "image": { "url": "https://picsum.photos/seed/bistro-promo-happyhour/600/400", "alt": "Happy Hour — Bistro & Brasa" },
+      "price": 0,
+      "price_before": null,
+      "valid_until": "2026-12-31",
+      "card": "promotion-card-pizza"
+    },
+    {
+      "id": "promo-family-sunday",
+      "slug": "family-sunday-brunch",
+      "name": "Family Sunday Brunch",
+      "description": "Brunch combo for 4, Sundays only",
+      "includes": ["Truffle Risotto", "Caesar Salad (Large)", "2 Soft Drinks", "Tiramisu"],
+      "image": { "url": "https://picsum.photos/seed/bistro-promo-family/600/400", "alt": "Family Sunday Brunch — Bistro & Brasa" },
+      "price": 52,
+      "price_before": 64,
+      "valid_until": null,
+      "card": "promotion-card-pizza"
+    },
+    {
+      "id": "promo-date-night",
+      "slug": "date-night-duo",
+      "name": "Date Night Duo",
+      "description": "Sea Bass + Wagyu Burger + dessert to share",
+      "includes": ["Pan-Seared Sea Bass", "Wagyu Burger", "Classic Tiramisu"],
+      "image": { "url": "https://picsum.photos/seed/bistro-promo-date/600/400", "alt": "Date Night Duo — Bistro & Brasa" },
+      "price": 48,
+      "price_before": 56,
+      "valid_until": null,
+      "card": "promotion-card-pizza"
+    }
+  ]
+}

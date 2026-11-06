@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "id": "combo-1-bistro-feast",
+      "name": "Bistro Feast",
+      "description": "Signature dish + starter + drink for two",
+      "includes": ["Truffle Risotto (Large)", "Burrata & Heirloom Tomatoes", "Sparkling Water 1L"],
+      "image": { "url": "https://picsum.photos/seed/bistro-combo-feast/600/400", "alt": "Bistro Feast — Bistro & Brasa" },
+      "price": 44.9,
+      "price_before": 54.8,
+      "card": "combo-card-pizza"
+    },
+    {
+      "id": "combo-2-pasta-night",
+      "name": "Pasta Night",
+      "description": "Two pastas, garlic bread, and a soft drink",
+      "includes": ["Classic Carbonara (Large)", "Pesto Genovese (Large)", "Garlic Bread", "Soft Drink"],
+      "image": { "url": "https://picsum.photos/seed/bistro-combo-pasta/600/400", "alt": "Pasta Night — Bistro & Brasa" },
+      "price": 32.9,
+      "price_before": 38.8,
+      "card": "combo-card-pizza"
+    },
+    {
+      "id": "combo-3-sea-land",
+      "name": "Sea & Land",
+      "description": "Pan-Seared Sea Bass + Wagyu Burger + two drinks",
+      "includes": ["Pan-Seared Sea Bass (Large)", "Wagyu Burger (Double)", "2 Soft Drinks"],
+      "image": { "url": "https://picsum.photos/seed/bistro-combo-sealand/600/400", "alt": "Sea & Land — Bistro & Brasa" },
+      "price": 56.9,
+      "price_before": 66.8,
+      "card": "combo-card-pizza"
+    }
+  ]
+}

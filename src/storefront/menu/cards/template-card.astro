@@ -1,0 +1,39 @@
+---
+/**
+ * TemplateCard — declarative product design router.
+ *
+ * Resolves the product's STATE (price range × image, see `productCardState`)
+ * and renders the design key the category's `card` map declares for that
+ * state, falling back to the default design (see DEFAULT_PRODUCT_CARD_DESIGN).
+ * The category hands its map down as the `card` prop — no slots, no
+ * per-block wiring in the page.
+ *
+ *   flat-with-image  → product-row        (default)
+ *   flat-no-image    → product-row        (default)
+ *   range-with-image → product-card       (default)
+ *   range-no-image   → product-card       (default)
+ *
+ * Every design OWNS its root element and the CLIENT CONTRACT
+ * `data-template-card`, `data-has-range`, `data-product` — the page's click
+ * delegation reads it. A design MUST carry all three.
+ *
+ * Adding a design: see `registry.ts` (component → schema key → registry →
+ * reference it from any category's `card` map in menu.json).
+ */
+import { PRODUCT_CARD_REGISTRY, productCardState, resolveProductCardDesign } from './registry';
+import type { CategoryCardMap, MenuProduct } from '../../types/menu';
+
+interface Props {
+  product: MenuProduct;
+  canOrder?: boolean;
+  /** The category's declarative state → design-key map (optional). */
+  card?: CategoryCardMap;
+}
+
+const { product, canOrder = true, card } = Astro.props;
+
+const designKey = resolveProductCardDesign(productCardState(product), card);
+const Design = PRODUCT_CARD_REGISTRY[designKey];
+---
+
+<Design product={product} canOrder={canOrder} />

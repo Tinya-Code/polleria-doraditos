@@ -1,0 +1,30 @@
+---
+/**
+ * TemplatePromotionCard — declarative promotion design router.
+ *
+ * Promotions carry no price range, so their `card` key IS the design (no
+ * state map): renders the promotion's declared design, falling back to the
+ * default (`DEFAULT_PROMOTION_CARD_DESIGN`) when absent.
+ *
+ * Every design OWNS its root + the CLIENT CONTRACT `data-promotion-card`,
+ * `data-product` — the page's click delegation reads it. A design MUST
+ * carry both.
+ *
+ * Adding a design: see `registry.ts` (component → schema key → registry →
+ * reference it from any promotion's `card` in promotions.json).
+ */
+import { PROMOTION_CARD_REGISTRY, DEFAULT_PROMOTION_CARD_DESIGN } from './registry';
+import type { Promotion } from '../../types/menu';
+
+interface Props {
+  promotion: Promotion;
+  canOrder?: boolean;
+}
+
+const { promotion, canOrder = true } = Astro.props;
+
+const designKey = promotion.card ?? DEFAULT_PROMOTION_CARD_DESIGN;
+const Design = PROMOTION_CARD_REGISTRY[designKey];
+---
+
+<Design promotion={promotion} canOrder={canOrder} />

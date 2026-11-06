@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "delay_seconds": 5,
+  "show_once_per_session": true,
+  "items": [
+    { "id": "flyer-weekend-special", "title": "Weekend Special", "image": "https://picsum.photos/seed/bistro-flyer-weekend/600/800", "alt": "Weekend Special — 20% off signature dishes", "link": null },
+    { "id": "flyer-happy-hour", "title": "Happy Hour", "image": "https://picsum.photos/seed/bistro-flyer-happyhour/600/800", "alt": "Happy Hour — 2x1 cocktails Mon–Fri 4–7 PM", "link": null },
+    { "id": "flyer-family-sunday", "title": "Family Sunday Brunch", "image": "https://picsum.photos/seed/bistro-flyer-family/600/800", "alt": "Family Sunday Brunch — combo for 4", "link": null }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "data": [
+    { "id": "gal-1", "title": "Truffle Risotto", "category": "Signature", "type": "image", "url": "https://picsum.photos/seed/bistro-gal-1/800/600", "alt": "Truffle Risotto — Bistro & Brasa", "description": "Creamy arborio with black truffle and parmesan." },
+    { "id": "gal-2", "title": "Pan-Seared Sea Bass", "category": "Signature", "type": "image", "url": "https://picsum.photos/seed/bistro-gal-2/800/600", "alt": "Pan-Seared Sea Bass — Bistro & Brasa", "description": "Atlantic sea bass with lemon beurre blanc." },
+    { "id": "gal-3", "title": "Wagyu Burger", "category": "Signature", "type": "image", "url": "https://picsum.photos/seed/bistro-gal-3/800/600", "alt": "Wagyu Burger — Bistro & Brasa", "description": "Wagyu patty on brioche with aged cheddar." },
+    { "id": "gal-4", "title": "Burrata & Heirloom Tomatoes", "category": "Starters", "type": "image", "url": "https://picsum.photos/seed/bistro-gal-4/800/600", "alt": "Burrata & Heirloom Tomatoes — Bistro & Brasa", "description": "Creamy burrata with heirloom tomatoes." },
+    { "id": "gal-5", "title": "Classic Tiramisu", "category": "Desserts", "type": "image", "url": "https://picsum.photos/seed/bistro-gal-5/800/600", "alt": "Classic Tiramisu — Bistro & Brasa", "description": "Espresso-soaked ladyfingers and mascarpone." },
+    { "id": "gal-6", "title": "Kitchen in Action", "category": "Behind the Scenes", "type": "video", "url": "https://www.w3schools.com/html/mov_bbb.mp4", "poster": "https://picsum.photos/seed/bistro-gal-6-poster/800/450", "aspect_ratio": "9/16", "alt": "Open kitchen — Bistro & Brasa", "description": "Watch our chefs at work." },
+    { "id": "gal-7", "title": "Dining Room", "category": "Ambience", "type": "image", "url": "https://picsum.photos/seed/bistro-gal-7/800/600", "alt": "Dining Room — Bistro & Brasa", "description": "Warm, contemporary dining space." }
+  ]
+}

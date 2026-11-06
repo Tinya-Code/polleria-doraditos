@@ -1,0 +1,70 @@
+---
+/**
+ * ComboCard — circular combo image with price badge and quick add.
+ *
+ * Props:
+ * - `combo`    — v2 `Combo` (`image.url`, effective `price`, `price_before`)
+ * - `canOrder` — whether the storefront accepts orders right now (page-loaded)
+ *
+ * Markup + `data-*` payload only: the page owns the click delegation and
+ * announces `add-to-cart` for the `data-combo-card` root (`data-combo` is its
+ * client contract — a combo has never opened the product dialog).
+ */
+import AddButton from '../../../commerce/add-button.astro';
+import OfferIncludes from '../offer-includes.astro';
+import { precio } from '../../../utils/format.js';
+import type { Combo } from '../../../types/menu';
+
+interface Props {
+  combo: Combo;
+  canOrder?: boolean;
+}
+
+const { combo, canOrder = true } = Astro.props;
+
+/** Client payload: `card` is a build-time design key, never client data. */
+const comboPayload = JSON.stringify({ ...(combo ?? {}), card: undefined });
+---
+
+<div
+  data-combo-card
+  data-combo={comboPayload}
+  class="group relative p-6 transition-all duration-300 overflow-hidden cursor-pointer active:scale-100 rounded-sm border-2 border-transparent hover:border-2 hover:border-accent flex flex-col"
+>
+  <!-- Combo Badge -->
+  <div class="relative flex flex-col h-full gap-4">
+    <div class="relative w-full h-50 mx-auto  group">
+      <!-- Imagen circular -->
+      <img
+        src={combo.image.url}
+        alt={combo.image.alt}
+        title={combo.name}
+        class="w-auto h-full mx-auto transition-transform duration-300"
+      />
+      <p class="absolute -bottom-4 -left-4 translate-x-1/2 py-1 px-4 rounded-sm tracking-widest bg-primary font-display text-white text-2xl">
+        {precio(combo.price)}
+
+              {
+        canOrder && (
+          <AddButton customClass="absolute bottom-1 -right-10 border-px border-white active" />
+        )
+      }
+      </p>
+
+    </div>
+
+    <div class="flex-1 flex flex-col gap-3">
+      <h3 class="text-3xl font-display text-primary-text ">{combo.name}</h3>
+
+      {combo.description && (
+        <div class="flex gap-3">
+          <p class="text-primary-text/80 text-xl max-w-xs text-center font-body leading-relaxed line-clamp-3">
+            {combo.description}
+          </p>
+        </div>
+      )}
+
+      <OfferIncludes items={combo.includes} class="mt-auto text-xl text-primary-text/80  font-body" />
+    </div>
+  </div>
+</div>
