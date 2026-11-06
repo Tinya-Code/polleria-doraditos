@@ -1,0 +1,1 @@
+import{n as e}from"./cart.service.DSVoQCmY.js";var t=document.querySelector(`[data-restaurant-closed-modal]`);t&&(e.isBusinessClosed.subscribe(()=>{t.hidden=!e.isBusinessClosed.get()},{immediate:!0}),t.addEventListener(`click`,t=>{(t.target instanceof Element?t.target:null)?.closest(`[data-closed-dismiss], [data-closed-backdrop]`)&&e.closeBusinessClosedModal()}));

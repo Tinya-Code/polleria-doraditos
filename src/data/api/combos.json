@@ -1,33 +1,33 @@
 {
   "data": [
     {
-      "id": "combo-1-bistro-feast",
-      "name": "Bistro Feast",
-      "description": "Signature dish + starter + drink for two",
-      "includes": ["Truffle Risotto (Large)", "Burrata & Heirloom Tomatoes", "Sparkling Water 1L"],
-      "image": { "url": "https://picsum.photos/seed/bistro-combo-feast/600/400", "alt": "Bistro Feast — Bistro & Brasa" },
-      "price": 44.9,
-      "price_before": 54.8,
+      "id": "combo-1-familiar",
+      "name": "Combo Familiar Doraditos",
+      "description": "Pollo a la brasa familiar + 2 acompañamientos + 2 bebidas",
+      "includes": ["Pollo a la brasa familiar", "Papas fritas grandes", "Ensalada grande", "2 bebidas de 500ml"],
+      "image": { "url": "https://picsum.photos/seed/doraditos-combo-familiar/600/400", "alt": "Combo Familiar — Pollería Doraditos" },
+      "price": 49.90,
+      "price_before": 59.90,
       "card": "combo-card-pizza"
     },
     {
-      "id": "combo-2-pasta-night",
-      "name": "Pasta Night",
-      "description": "Two pastas, garlic bread, and a soft drink",
-      "includes": ["Classic Carbonara (Large)", "Pesto Genovese (Large)", "Garlic Bread", "Soft Drink"],
-      "image": { "url": "https://picsum.photos/seed/bistro-combo-pasta/600/400", "alt": "Pasta Night — Bistro & Brasa" },
-      "price": 32.9,
-      "price_before": 38.8,
+      "id": "combo-2-pareja",
+      "name": "Combo Pareja",
+      "description": "1/2 pollo a la brasa + 1 acompañamiento + 2 bebidas",
+      "includes": ["1/2 pollo a la brasa", "Papas fritas medianas", "Ensalada mediana", "2 bebidas de 330ml"],
+      "image": { "url": "https://picsum.photos/seed/doraditos-combo-pareja/600/400", "alt": "Combo Pareja — Pollería Doraditos" },
+      "price": 34.90,
+      "price_before": 39.90,
       "card": "combo-card-pizza"
     },
     {
-      "id": "combo-3-sea-land",
-      "name": "Sea & Land",
-      "description": "Pan-Seared Sea Bass + Wagyu Burger + two drinks",
-      "includes": ["Pan-Seared Sea Bass (Large)", "Wagyu Burger (Double)", "2 Soft Drinks"],
-      "image": { "url": "https://picsum.photos/seed/bistro-combo-sealand/600/400", "alt": "Sea & Land — Bistro & Brasa" },
-      "price": 56.9,
-      "price_before": 66.8,
+      "id": "combo-3-individual",
+      "name": "Combo Individual",
+      "description": "1/4 pollo a la brasa + 1 acompañamiento + 1 bebida",
+      "includes": ["1/4 pollo a la brasa", "Papas fritas pequeñas", "Ensalada pequeña", "1 bebida de 330ml"],
+      "image": { "url": "https://picsum.photos/seed/doraditos-combo-individual/600/400", "alt": "Combo Individual — Pollería Doraditos" },
+      "price": 18.90,
+      "price_before": 22.90,
       "card": "combo-card-pizza"
     }
   ]

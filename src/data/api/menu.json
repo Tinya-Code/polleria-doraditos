@@ -5,24 +5,25 @@
         "id": "block-1",
         "categories": [
           {
-            "id": "cat-signature",
-            "name": "Signature Dishes",
-            "description": "Chef's special creations",
+            "id": "cat-pollos",
+            "name": "Pollos a la Brasa",
+            "description": "Nuestros pollos a la brasa en diferentes tamaños",
             "block_id": "block-1",
             "products": [
-              { "id": "sig-truffle-risotto", "name": "Truffle Risotto", "description": "Arborio rice, black truffle, parmesan, white wine cream", "image": { "url": "https://picsum.photos/seed/bistro-risotto/600/400", "alt": "Truffle Risotto — Bistro & Brasa" }, "price": 24, "price_range": { "id": "r-sig-truffle-risotto", "name": "Portions", "entries": [ { "qty": 1, "price": 24, "label": "Regular" }, { "qty": 1, "price": 34, "label": "Large" } ], "min_price": 24, "max_price": 34 }, "qty_label": null, "is_recommended": true, "is_hidden": false, "category_id": "cat-signature" },
-              { "id": "sig-sea-bass", "name": "Pan-Seared Sea Bass", "description": "Atlantic sea bass, lemon beurre blanc, asparagus", "image": { "url": "https://picsum.photos/seed/bistro-seabass/600/400", "alt": "Pan-Seared Sea Bass — Bistro & Brasa" }, "price": 28, "price_range": { "id": "r-sig-sea-bass", "name": "Portions", "entries": [ { "qty": 1, "price": 28, "label": "Regular" }, { "qty": 1, "price": 38, "label": "Large" } ], "min_price": 28, "max_price": 38 }, "qty_label": null, "is_recommended": true, "is_hidden": false, "category_id": "cat-signature" },
-              { "id": "sig-wagyu-burger", "name": "Wagyu Burger", "description": "Wagyu patty, brioche, aged cheddar, caramelized onions", "image": { "url": "https://picsum.photos/seed/bistro-burger/600/400", "alt": "Wagyu Burger — Bistro & Brasa" }, "price": 18, "price_range": { "id": "r-sig-wagyu-burger", "name": "Portions", "entries": [ { "qty": 1, "price": 18, "label": "Single" }, { "qty": 1, "price": 26, "label": "Double" } ], "min_price": 18, "max_price": 26 }, "qty_label": null, "is_recommended": true, "is_hidden": false, "category_id": "cat-signature" }
+              { "id": "pollo-familar", "name": "Pollo Familiar", "description": "Pollo entero a la brasa con papas fritas y ensalada", "image": { "url": "https://picsum.photos/seed/doraditos-pollo-familiar/600/400", "alt": "Pollo Familiar — Doraditos" }, "price": 39.90, "price_range": { "id": "r-pollo-familiar", "name": "Tamaños", "entries": [ { "qty": 1, "price": 39.90, "label": "Familiar" }, { "qty": 1, "price": 54.90, "label": "Mega Familiar" } ], "min_price": 39.90, "max_price": 54.90 }, "qty_label": null, "is_recommended": true, "is_hidden": false, "category_id": "cat-pollos" },
+              { "id": "pollo-medio", "name": "1/2 Pollo a la Brasa", "description": "Media porción de pollo a la brasa con papas y ensalada", "image": { "url": "https://picsum.photos/seed/doraditos-pollo-medio/600/400", "alt": "1/2 Pollo — Doraditos" }, "price": 24.90, "price_range": { "id": "r-pollo-medio", "name": "Tamaños", "entries": [ { "qty": 1, "price": 24.90, "label": "1/2 Pollo" }, { "qty": 1, "price": 34.90, "label": "1/2 Pollo Grande" } ], "min_price": 24.90, "max_price": 34.90 }, "qty_label": null, "is_recommended": true, "is_hidden": false, "category_id": "cat-pollos" },
+              { "id": "pollo-cuarto", "name": "1/4 Pollo a la Brasa", "description": "Cuarto de pollo a la brasa con papas y ensalada", "image": { "url": "https://picsum.photos/seed/doraditos-pollo-cuarto/600/400", "alt": "1/4 Pollo — Doraditos" }, "price": 14.90, "price_range": { "id": "r-pollo-cuarto", "name": "Tamaños", "entries": [ { "qty": 1, "price": 14.90, "label": "1/4 Pollo" } ], "min_price": 14.90, "max_price": 14.90 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-pollos" }
             ]
           },
           {
-            "id": "cat-pasta",
-            "name": "Pasta & Risotto",
-            "description": "Handmade pasta classics",
+            "id": "cat-acompanamientos",
+            "name": "Acompañamientos",
+            "description": "Papas, ensaladas, arroz y más",
             "block_id": "block-1",
             "products": [
-              { "id": "pasta-carbonara", "name": "Classic Carbonara", "description": "Spaghetti, guanciale, pecorino, egg yolk, black pepper", "image": { "url": "https://picsum.photos/seed/bistro-carbonara/600/400", "alt": "Classic Carbonara — Bistro & Brasa" }, "price": 16, "price_range": { "id": "r-pasta-carbonara", "name": "Portions", "entries": [ { "qty": 1, "price": 16, "label": "Regular" }, { "qty": 1, "price": 22, "label": "Large" } ], "min_price": 16, "max_price": 22 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-pasta" },
-              { "id": "pasta-pesto", "name": "Pesto Genovese", "description": "Trofie pasta, basil pesto, pine nuts, parmesan", "image": { "url": "https://picsum.photos/seed/bistro-pesto/600/400", "alt": "Pesto Genovese — Bistro & Brasa" }, "price": 15, "price_range": { "id": "r-pasta-pesto", "name": "Portions", "entries": [ { "qty": 1, "price": 15, "label": "Regular" }, { "qty": 1, "price": 21, "label": "Large" } ], "min_price": 15, "max_price": 21 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-pasta" }
+              { "id": "papas-grandes", "name": "Papas Fritas Grandes", "description": "Papas fritas crujientes porción grande", "image": { "url": "https://picsum.photos/seed/doraditos-papas/600/400", "alt": "Papas Fritas — Doraditos" }, "price": 8.90, "price_range": { "id": "r-papas-grandes", "name": "Tamaños", "entries": [ { "qty": 1, "price": 8.90, "label": "Grande" }, { "qty": 1, "price": 12.90, "label": "Familiar" } ], "min_price": 8.90, "max_price": 12.90 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-acompanamientos" },
+              { "id": "ensalada", "name": "Ensalada de la Casa", "description": "Ensalada fresca con lechuga, tomate y zanahoria", "image": { "url": "https://picsum.photos/seed/doraditos-ensalada/600/400", "alt": "Ensalada — Doraditos" }, "price": 7.90, "price_range": { "id": "r-ensalada", "name": "Tamaños", "entries": [ { "qty": 1, "price": 7.90, "label": "Regular" } ], "min_price": 7.90, "max_price": 7.90 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-acompanamientos" },
+              { "id": "arroz-chaufa", "name": "Arroz Chaufa", "description": "Arroz chaufa estilo peruano con pollo y verduras", "image": { "url": "https://picsum.photos/seed/doraditos-arroz/600/400", "alt": "Arroz Chaufa — Doraditos" }, "price": 12.90, "price_range": { "id": "r-arroz-chaufa", "name": "Tamaños", "entries": [ { "qty": 1, "price": 12.90, "label": "Regular" }, { "qty": 1, "price": 18.90, "label": "Familiar" } ], "min_price": 12.90, "max_price": 18.90 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-acompanamientos" }
             ]
           }
         ]
@@ -31,22 +32,24 @@
         "id": "block-2",
         "categories": [
           {
-            "id": "cat-starters",
-            "name": "Starters",
-            "description": "To share or to start",
+            "id": "cat-bebidas",
+            "name": "Bebidas",
+            "description": "Refrescos, jugos y cerveza",
             "block_id": "block-2",
             "products": [
-              { "id": "st-burrata", "name": "Burrata & Heirloom Tomatoes", "description": "Creamy burrata, heirloom tomatoes, basil oil, toasted bread", "image": { "url": "https://picsum.photos/seed/bistro-burrata/600/400", "alt": "Burrata & Heirloom Tomatoes — Bistro & Brasa" }, "price": 12, "price_range": { "id": "r-st-burrata", "name": "Portions", "entries": [ { "qty": 1, "price": 12, "label": "Regular" } ], "min_price": 12, "max_price": 12 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-starters" },
-              { "id": "st-calamari", "name": "Crispy Calamari", "description": "Flash-fried calamari, aioli, lemon", "image": { "url": "https://picsum.photos/seed/bistro-calamari/600/400", "alt": "Crispy Calamari — Bistro & Brasa" }, "price": 10, "price_range": { "id": "r-st-calamari", "name": "Portions", "entries": [ { "qty": 1, "price": 10, "label": "Regular" }, { "qty": 1, "price": 16, "label": "Large" } ], "min_price": 10, "max_price": 16 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-starters" }
+              { "id": "gaseosa-500", "name": "Gaseosa 500ml", "description": "Botella de gaseosa 500ml", "image": { "url": "https://picsum.photos/seed/doraditos-gaseosa/600/400", "alt": "Gaseosa — Doraditos" }, "price": 4.50, "price_range": { "id": "r-gaseosa-500", "name": "Tamaños", "entries": [ { "qty": 1, "price": 4.50, "label": "500ml" }, { "qty": 1, "price": 7.00, "label": "1.5L" } ], "min_price": 4.50, "max_price": 7.00 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-bebidas" },
+              { "id": "jugo-naranja", "name": "Jugo de Naranja", "description": "Jugo natural de naranja 500ml", "image": { "url": "https://picsum.photos/seed/doraditos-jugo/600/400", "alt": "Jugo de Naranja — Doraditos" }, "price": 6.90, "price_range": { "id": "r-jugo-naranja", "name": "Tamaños", "entries": [ { "qty": 1, "price": 6.90, "label": "500ml" } ], "min_price": 6.90, "max_price": 6.90 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-bebidas" },
+              { "id": "cerveza", "name": "Cerveza", "description": "Cerveza fría 330ml", "image": { "url": "https://picsum.photos/seed/doraditos-cerveza/600/400", "alt": "Cerveza — Doraditos" }, "price": 8.90, "price_range": { "id": "r-cerveza", "name": "Tamaños", "entries": [ { "qty": 1, "price": 8.90, "label": "330ml" } ], "min_price": 8.90, "max_price": 8.90 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-bebidas" }
             ]
           },
           {
-            "id": "cat-salads",
-            "name": "Salads",
-            "description": "Fresh and seasonal",
+            "id": "cat-postres",
+            "name": "Postres",
+            "description": "Dulces para cerrar con broche de oro",
             "block_id": "block-2",
             "products": [
-              { "id": "sal-caesar", "name": "Caesar Salad", "description": "Romaine, parmesan, croutons, caesar dressing", "image": { "url": "https://picsum.photos/seed/bistro-caesar/600/400", "alt": "Caesar Salad — Bistro & Brasa" }, "price": 9, "price_range": { "id": "r-sal-caesar", "name": "Portions", "entries": [ { "qty": 1, "price": 9, "label": "Regular" }, { "qty": 1, "price": 14, "label": "Large" } ], "min_price": 9, "max_price": 14 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-salads" }
+              { "id": "suspiro-limeño", "name": "Suspiro Limeño", "description": "Postre tradicional peruano con manjar blanco y merengue", "image": { "url": "https://picsum.photos/seed/doraditos-suspiro/600/400", "alt": "Suspiro Limeño — Doraditos" }, "price": 9.90, "price_range": { "id": "r-suspiro-limeño", "name": "Tamaños", "entries": [ { "qty": 1, "price": 9.90, "label": "Individual" } ], "min_price": 9.90, "max_price": 9.90 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-postres" },
+              { "id": "mazamorra", "name": "Mazamorra Morada", "description": "Mazamorra morada con arroz con leche", "image": { "url": "https://picsum.photos/seed/doraditos-mazamorra/600/400", "alt": "Mazamorra Morada — Doraditos" }, "price": 7.90, "price_range": { "id": "r-mazamorra", "name": "Tamaños", "entries": [ { "qty": 1, "price": 7.90, "label": "Individual" } ], "min_price": 7.90, "max_price": 7.90 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-postres" }
             ]
           }
         ]
@@ -55,13 +58,13 @@
         "id": "block-6",
         "categories": [
           {
-            "id": "cat-desserts",
-            "name": "Desserts",
-            "description": "Sweet endings",
+            "id": "cat-salsas",
+            "name": "Salsas y Adicionales",
+            "description": "Salsas de la casa para acompañar",
             "block_id": "block-6",
             "products": [
-              { "id": "des-tiramisu", "name": "Classic Tiramisu", "description": "Ladyfingers, espresso, mascarpone, cocoa", "image": { "url": "https://picsum.photos/seed/bistro-tiramisu/600/400", "alt": "Classic Tiramisu — Bistro & Brasa" }, "price": 8, "price_range": { "id": "r-des-tiramisu", "name": "Portions", "entries": [ { "qty": 1, "price": 8, "label": "Regular" } ], "min_price": 8, "max_price": 8 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-desserts" },
-              { "id": "des-cheesecake", "name": "New York Cheesecake", "description": "Cream cheese, graham crust, berry compote", "image": { "url": "https://picsum.photos/seed/bistro-cheesecake/600/400", "alt": "New York Cheesecake — Bistro & Brasa" }, "price": 8, "price_range": { "id": "r-des-cheesecake", "name": "Portions", "entries": [ { "qty": 1, "price": 8, "label": "Regular" } ], "min_price": 8, "max_price": 8 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-desserts" }
+              { "id": "salsa-rocoto", "name": "Salsa de Rocoto", "description": "Salsa picante de rocoto de la casa", "image": { "url": "https://picsum.photos/seed/doraditos-salsa-rocoto/600/400", "alt": "Salsa de Rocoto — Doraditos" }, "price": 3.50, "price_range": { "id": "r-salsa-rocoto", "name": "Tamaños", "entries": [ { "qty": 1, "price": 3.50, "label": "Porción" } ], "min_price": 3.50, "max_price": 3.50 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-salsas" },
+              { "id": "salsa-aji", "name": "Salsa de Ají", "description": "Salsa de ají amarillo de la casa", "image": { "url": "https://picsum.photos/seed/doraditos-salsa-aji/600/400", "alt": "Salsa de Ají — Doraditos" }, "price": 3.50, "price_range": { "id": "r-salsa-aji", "name": "Tamaños", "entries": [ { "qty": 1, "price": 3.50, "label": "Porción" } ], "min_price": 3.50, "max_price": 3.50 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-salsas" }
             ]
           }
         ]

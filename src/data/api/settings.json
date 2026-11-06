@@ -1,63 +1,63 @@
 {
   "data": {
-    "name": "Bistro & Brasa",
-    "phone": "+1 555 0100",
-    "address": "Av. Gastronómica 456, Ciudad Moderna",
-    "geo": { "lat": 40.7128, "lng": -74.006 },
+    "name": "Pollería Doraditos",
+    "phone": "+51 987 654 321",
+    "address": "Av. Lima 1234, Lima, Perú",
+    "geo": { "lat": -12.0464, "lng": -77.0428 },
     "whatsapp": {
-      "number": "+1 555 0101",
-      "message_template": "Hi, I'd like to place an order:",
+      "number": "+51 987 654 321",
+      "message_template": "Hola, quiero pedir pollería para delivery:",
       "contacts": [
-        { "label": "Orders", "number": "+1 555 0101", "description": "Place your order via WhatsApp" },
-        { "label": "Reservations", "number": "+1 555 0102", "description": "Book a table" },
-        { "label": "Questions", "number": "+1 555 0103", "description": "Menu and allergy questions" }
+        { "label": "Pedidos", "number": "+51 987 654 321", "description": "Pide tu pollo a la brasa" },
+        { "label": "Reservas", "number": "+51 987 654 322", "description": "Reserva tu mesa" },
+        { "label": "Consultas", "number": "+51 987 654 323", "description": "Preguntas sobre el menú" }
       ]
     },
-    "timezone": "America/New_York",
-    "currency": "USD",
-    "language": "en",
+    "timezone": "America/Lima",
+    "currency": "PEN",
+    "language": "es",
     "delivery": {
       "enabled": true,
-      "fee": 4.99,
+      "fee": 5,
       "charge_delivery": true,
       "zones": [
-        { "id": "downtown", "name": "Downtown", "fee": 4.99 },
-        { "id": "uptown", "name": "Uptown", "fee": 6.99 },
-        { "id": "brooklyn", "name": "Brooklyn", "fee": 8.99 },
-        { "id": "queens", "name": "Queens", "fee": 7.99 }
+        { "id": "lima-centro", "name": "Lima Centro", "fee": 5 },
+        { "id": "san-isidro", "name": "San Isidro", "fee": 7 },
+        { "id": "miraflores", "name": "Miraflores", "fee": 8 },
+        { "id": "surco", "name": "Santiago de Surco", "fee": 7 }
       ]
     },
-    "payment_methods": ["apple_pay", "google_pay", "visa", "mastercard", "cash"],
-    "max_order_quantity": 30,
+    "payment_methods": ["yape", "plin", "visa", "mastercard", "efectivo"],
+    "max_order_quantity": 20,
     "social_media": {
-      "tiktok": "https://tiktok.com/@bistrobras",
-      "instagram": "https://instagram.com/bistrobras",
-      "facebook": ""
+      "tiktok": "https://tiktok.com/@polleriadoraditos",
+      "instagram": "https://instagram.com/polleriadoraditos",
+      "facebook": "https://facebook.com/polleriadoraditos"
     },
-    "google_maps": "https://maps.app.goo.gl/exampleMapsLink",
+    "google_maps": "https://maps.app.goo.gl/polleriadoraditos",
     "business_hours": {
-      "mon": { "isOpen": true, "open": "11:30", "close": "22:00" },
-      "tue": { "isOpen": true, "open": "11:30", "close": "22:00" },
-      "wed": { "isOpen": true, "open": "11:30", "close": "22:00" },
-      "thu": { "isOpen": true, "open": "11:30", "close": "23:00" },
-      "fri": { "isOpen": true, "open": "11:30", "close": "23:30" },
+      "mon": { "isOpen": true, "open": "11:00", "close": "22:00" },
+      "tue": { "isOpen": true, "open": "11:00", "close": "22:00" },
+      "wed": { "isOpen": true, "open": "11:00", "close": "22:00" },
+      "thu": { "isOpen": true, "open": "11:00", "close": "23:00" },
+      "fri": { "isOpen": true, "open": "11:00", "close": "23:30" },
       "sat": { "isOpen": true, "open": "10:00", "close": "23:30" },
       "sun": { "isOpen": true, "open": "10:00", "close": "21:00" }
     },
-    "tags": ["signature", "chef-recommended", "spicy", "vegetarian-option"],
+    "tags": ["pollo a la brasa", "delivery", "familiar", "peruano"],
     "seo": {
-      "site_name": "Bistro & Brasa",
-      "title": "Bistro & Brasa — Contemporary Dining & Delivery",
-      "title_template": "%s | Bistro & Brasa",
-      "description": "Contemporary cuisine, signature dishes, combos and drinks delivered to your door.",
-      "keywords": ["food delivery", "contemporary dining", "combo meals", "signature dishes"],
-      "og_image": "https://picsum.photos/seed/bistro-og/1200/630",
+      "site_name": "Pollería Doraditos",
+      "title": "Pollería Doraditos — Pollo a la Brasa Delivery en Lima",
+      "title_template": "%s | Pollería Doraditos",
+      "description": "El mejor pollo a la brasa de Lima con delivery a domicilio. Combos familiares y promociones.",
+      "keywords": ["pollo a la brasa", "pollería lima", "delivery de pollo", "combos familiares"],
+      "og_image": "https://picsum.photos/seed/doraditos-og/1200/630",
       "twitter_card": "summary_large_image",
-      "locale": "en_US",
+      "locale": "es_PE",
       "canonical_url": null,
       "json_ld": {
         "@type": "Restaurant",
-        "servesCuisine": "Contemporary",
+        "servesCuisine": "Peruvian",
         "priceRange": "$$"
       }
     }

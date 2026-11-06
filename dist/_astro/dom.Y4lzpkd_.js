@@ -1,0 +1,1 @@
+function e(e,t,n){let r=e?.getAttribute(t);if(!r)return n??null;try{return JSON.parse(r)}catch{return n??null}}function t(t){return e(t,`data-product`,null)}function n(){return e(document.getElementById(`business-hours-data`),`data-business-hours`,null)}export{e as n,t as r,n as t};

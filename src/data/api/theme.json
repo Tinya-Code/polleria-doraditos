@@ -1,28 +1,28 @@
 {
   "data": {
-    "page": { "background": "https://picsum.photos/seed/bistro-bg/1920/1080", "header_bg": null, "footer_bg": null },
-    "brand": { "logo_url": "https://picsum.photos/seed/bistro-logo/300/120" },
-    "share": { "title": "Bistro & Brasa", "text": "Check out this delicious menu! 🍽️", "label": "Share", "button_title": "Share this menu" },
+    "page": { "background": "https://picsum.photos/seed/doraditos-bg/1920/1080", "header_bg": null, "footer_bg": null },
+    "brand": { "logo_url": "https://picsum.photos/seed/doraditos-logo/300/120" },
+    "share": { "title": "Pollería Doraditos", "text": "¡El mejor pollo a la brasa de Lima! 🍗", "label": "Compartir", "button_title": "Compartir este menú" },
     "header": {
       "layout": { "logo_position": "left", "show_name": true },
       "actions": [
-        { "type": "link", "href": "/galeria", "label": "Gallery", "title": "View photo gallery", "icon": "images" },
+        { "type": "link", "href": "/galeria", "label": "Galería", "title": "Ver galería de fotos", "icon": "images" },
         { "type": "share" }
       ]
     },
     "blocks": {
       "block-1": [
-        { "slot": "left", "type": "rail", "containerClass": "relative hidden md:block col-span-0 md:col-span-2 h-full", "items": [ "https://picsum.photos/seed/bistro-rail-1/800/1200", "https://picsum.photos/seed/bistro-rail-2/800/1200", "https://picsum.photos/seed/bistro-rail-3/800/1200" ] },
-        { "slot": "right", "type": "image", "src": "https://picsum.photos/seed/bistro-rail-hero/800/800", "alt": "Decorative dish", "containerClass": "relative md:block col-span-1 md:col-span-2 h-full", "class": "absolute top-0 -right-28 md:-right-48 min-w-[300px] md:min-w-[400px] object-contain will-change-transform transition-transform duration-75 ease-out", "animation": "parallax", "attrs": { "data-barco": "" } }
+        { "slot": "left", "type": "rail", "containerClass": "relative hidden md:block col-span-0 md:col-span-2 h-full", "items": [ "https://picsum.photos/seed/doraditos-rail-1/800/1200", "https://picsum.photos/seed/doraditos-rail-2/800/1200", "https://picsum.photos/seed/doraditos-rail-3/800/1200" ] },
+        { "slot": "right", "type": "image", "src": "https://picsum.photos/seed/doraditos-rail-hero/800/800", "alt": "Decoración pollería", "containerClass": "relative md:block col-span-1 md:col-span-2 h-full", "class": "absolute top-0 -right-28 md:-right-48 min-w-[300px] md:min-w-[400px] object-contain will-change-transform transition-transform duration-75 ease-out", "animation": "parallax", "attrs": { "data-barco": "" } }
       ],
       "block-3": [
         { "slot": "left", "type": "group", "containerClass": "justify-between flex col-span-12 h-60 md:col-span-12 md:h-full", "images": [
-          { "src": "https://picsum.photos/seed/bistro-group-1/800/600", "alt": "Dish background", "class": "h-full md:h-auto md:w-130 md:absolute -top-4 -right-35" },
-          { "src": "https://picsum.photos/seed/bistro-group-2/800/600", "alt": "Dish background 2", "class": "h-full md:h-90 md:w-auto md:absolute -bottom-12 -right-5" }
+          { "src": "https://picsum.photos/seed/doraditos-group-1/800/600", "alt": "Pollo a la brasa", "class": "h-full md:h-auto md:w-130 md:absolute -top-4 -right-35" },
+          { "src": "https://picsum.photos/seed/doraditos-group-2/800/600", "alt": "Acompañamientos", "class": "h-full md:h-90 md:w-auto md:absolute -bottom-12 -right-5" }
         ] }
       ],
       "block-6": [
-        { "slot": "left", "type": "image", "src": "https://picsum.photos/seed/bistro-drinks/400/700", "alt": "Drinks Vertical", "containerClass": "w-full relative h-full col-span-1 flex justify-center items-center md:col-span-4", "class": "absolute md:static -left-70 min-w-[500px] md:min-w-[450px] h-auto" }
+        { "slot": "left", "type": "image", "src": "https://picsum.photos/seed/doraditos-drinks/400/700", "alt": "Bebidas", "containerClass": "w-full relative h-full col-span-1 flex justify-center items-center md:col-span-4", "class": "absolute md:static -left-70 min-w-[500px] md:min-w-[450px] h-auto" }
       ]
     }
   }
