@@ -1,6 +1,6 @@
 {
   "data": {
-    "page": { "background": "https://picsum.photos/seed/doraditos-bg/1920/1080", "header_bg": null, "footer_bg": null },
+    "page": { "background": "/images/bg.png", "header_bg": null, "footer_bg": null },
     "brand": { "logo_url": "https://picsum.photos/seed/doraditos-logo/300/120" },
     "share": { "title": "Pollería Doraditos", "text": "¡El mejor pollo a la brasa de Lima! 🍗", "label": "Compartir", "button_title": "Compartir este menú" },
     "header": {
