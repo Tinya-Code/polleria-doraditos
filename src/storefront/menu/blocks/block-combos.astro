@@ -42,7 +42,9 @@ const {
 
       <Slider showArrows={true}>
         {combos.map((combo) => (
-          <TemplateComboCard combo={combo} canOrder={canOrder} />
+          <div class="shrink-0 w-80 snap-start">
+            <TemplateComboCard combo={combo} canOrder={canOrder} />
+          </div>
         ))}
       </Slider>
     </section>

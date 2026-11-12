@@ -19,8 +19,8 @@
  * Wired per block via the `range-*` state slots in `src/pages/menu.astro`
  * (pizza blocks 1, 2 and 6); the router default stays `ProductCard`.
  */
-import ShoppingBag from '../../../icons/shopping-bag.astro';
 import Star from '../../../icons/star.astro';
+import AddButton from '../../../commerce/add-button.astro';
 import type { MenuProduct } from '../../../types/menu';
 import { entryLabel } from '../../../utils/entry-label';
 import { precio } from '../../../utils/format.js';
@@ -80,14 +80,12 @@ const hasImage = !!product.image?.url;
 
     {
       canOrder && (
-        <button
-          data-add-button
-          type="button"
-          class="mt-auto flex  items-center justify-center gap-2 rounded-full bg-accent px-6 py-2 font-display text-md font-bold uppercase text-primary-text transition hover:brightness-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-text active:scale-[0.98] "
-        >
-          <ShoppingBag class="h-5 w-5" />
-          Agregar
-        </button>
+        <AddButton
+          variant="pill"
+          icon="bag"
+          text="Agregar"
+          class="mt-auto w-full justify-center px-6 py-2 font-display text-md uppercase"
+        />
       )
     }
     </div>
