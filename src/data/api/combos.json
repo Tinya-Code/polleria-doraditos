@@ -1,34 +1,85 @@
 {
   "data": [
     {
-      "id": "combo-1-familiar",
-      "name": "Combo Familiar Doraditos",
-      "description": "Pollo a la brasa familiar + 2 acompañamientos + 2 bebidas",
-      "includes": ["Pollo a la brasa familiar", "Papas fritas grandes", "Ensalada grande", "2 bebidas de 500ml"],
-      "image": { "url": "https://picsum.photos/seed/doraditos-combo-familiar/600/400", "alt": "Combo Familiar — Pollería Doraditos" },
-      "price": 49.90,
-      "price_before": 59.90,
-      "card": "combo-card-pizza"
+      "id": "combo-1-pollo",
+      "name": "1 Pollo",
+      "description": "Papa + Ensalada + Cremas",
+      "image": { "url": "https://picsum.photos/seed/doraditos-combo-1-pollo/600/400", "alt": "1 Pollo — Doraditos" },
+      "price": 55.0,
+      "price_before": null,
+      "card": "combo-card"
     },
     {
-      "id": "combo-2-pareja",
-      "name": "Combo Pareja",
-      "description": "1/2 pollo a la brasa + 1 acompañamiento + 2 bebidas",
-      "includes": ["1/2 pollo a la brasa", "Papas fritas medianas", "Ensalada mediana", "2 bebidas de 330ml"],
-      "image": { "url": "https://picsum.photos/seed/doraditos-combo-pareja/600/400", "alt": "Combo Pareja — Pollería Doraditos" },
-      "price": 34.90,
-      "price_before": 39.90,
-      "card": "combo-card-pizza"
+      "id": "combo-1-8-pollo",
+      "name": "1/8 Pollo",
+      "description": "Papa + Ensalada + Cremas",
+      "image": { "url": "https://picsum.photos/seed/doraditos-combo-1-8/600/400", "alt": "1/8 Pollo — Doraditos" },
+      "price": 10.0,
+      "price_before": null,
+      "card": "combo-card"
     },
     {
-      "id": "combo-3-individual",
-      "name": "Combo Individual",
-      "description": "1/4 pollo a la brasa + 1 acompañamiento + 1 bebida",
-      "includes": ["1/4 pollo a la brasa", "Papas fritas pequeñas", "Ensalada pequeña", "1 bebida de 330ml"],
-      "image": { "url": "https://picsum.photos/seed/doraditos-combo-individual/600/400", "alt": "Combo Individual — Pollería Doraditos" },
-      "price": 18.90,
-      "price_before": 22.90,
-      "card": "combo-card-pizza"
+      "id": "combo-1-4-pollo",
+      "name": "1/4 Pollo",
+      "description": "Papa + Ensalada + Cremas",
+      "image": { "url": "https://picsum.photos/seed/doraditos-combo-1-4/600/400", "alt": "1/4 Pollo — Doraditos" },
+      "price": 16.0,
+      "price_before": null,
+      "card": "combo-card"
+    },
+    {
+      "id": "combo-1-2-pollo",
+      "name": "1/2 Pollo",
+      "description": "Papa + Ensalada + Cremas",
+      "image": { "url": "https://picsum.photos/seed/doraditos-combo-1-2/600/400", "alt": "1/2 Pollo — Doraditos" },
+      "price": 30.0,
+      "price_before": null,
+      "card": "combo-card"
+    },
+    {
+      "id": "combo-super",
+      "name": "Super Combo",
+      "description": "1 Pollo + 1/2 Pollo + Papas + Ensalada + Cremas",
+      "image": { "url": "https://picsum.photos/seed/doraditos-super-combo/600/400", "alt": "Super Combo — Doraditos" },
+      "price": 80.0,
+      "price_before": null,
+      "card": "combo-card"
+    },
+    {
+      "id": "combo-doradito",
+      "name": "Combo Doradito",
+      "description": "1 Pollo + Papa + Ensalada + Cremas + Gaseosa 1.5 Lt o 1/4 Pollo",
+      "image": { "url": "https://picsum.photos/seed/doraditos-combo-doradito/600/400", "alt": "Combo Doradito — Doraditos" },
+      "price": 75.0,
+      "price_before": null,
+      "card": "combo-card"
+    },
+    {
+      "id": "combo-familiar",
+      "name": "Combo Familiar",
+      "description": "1 Pollo + Papa + Ensalada + Cremas + Gaseosa 1.5 Lt.",
+      "image": { "url": "https://picsum.photos/seed/doraditos-combo-familiar-real/600/400", "alt": "Combo Familiar — Doraditos" },
+      "price": 65.0,
+      "price_before": null,
+      "card": "combo-card"
+    },
+    {
+      "id": "combo-duo",
+      "name": "Combo Dúo",
+      "description": "1/2 Pollo + Cremas + Ensalada + Papa + Gaseosa Gordita",
+      "image": { "url": "https://picsum.photos/seed/doraditos-combo-duo/600/400", "alt": "Combo Dúo — Doraditos" },
+      "price": 33.0,
+      "price_before": null,
+      "card": "combo-card"
+    },
+    {
+      "id": "combo-personal",
+      "name": "Combo Personal",
+      "description": "1/4 de Pollo + Gaseosa Personal",
+      "image": { "url": "https://picsum.photos/seed/doraditos-combo-personal/600/400", "alt": "Combo Personal — Doraditos" },
+      "price": 17.0,
+      "price_before": null,
+      "card": "combo-card"
     }
   ]
 }

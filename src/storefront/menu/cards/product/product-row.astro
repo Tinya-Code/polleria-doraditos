@@ -1,7 +1,7 @@
 ---
 /**
- * ProductRow — flat-price product design (minimalist list row).
- * State coverage: `flat-with-image` and `flat-no-image` (thumbnail is
+ * ProductRow — flat-price product design (image card).
+ * State coverage: `flat-with-image` and `flat-no-image` (image is
  * optional inside this design).
  *
  * Props:
@@ -23,48 +23,67 @@ interface Props {
 
 const { product, canOrder = true } = Astro.props;
 
+/**
+ * Whether this card renders `product.description`.
+ * Most products don't show a description even if the JSON has one;
+ * combos keep theirs on their own card (`combo-card`).
+ */
+const SHOW_DESCRIPTION = false;
+
 /** Minimum price (the API computes it); the flat price otherwise. */
 const startingPrice = product.price;
+const hasImage = !!product.image?.url;
 ---
 
-<!-- DISEÑO: Producto Estándar (Estilo Lista / Minimalista) -->
+<!-- DISEÑO: Card de producto con imagen -->
 <div
   data-template-card
   data-has-range="false"
   data-product={JSON.stringify(product ?? {})}
-  class="group relative py-6 px-4  transition-all duration-300 cursor-pointer hover:bg-secondary/5 border-b border-secondary/10 flex items-start gap-6"
+  class="group relative w-full h-full bg-primary rounded-2xl shadow-xl overflow-hidden flex flex-col transition-all duration-300 hover:shadow-2xl cursor-pointer"
 >
-  <!-- Contenido Izquierdo (Info) -->
-  <div class="flex-1 space-y-2">
-    <div class="flex items-start gap-2">
-      <h3 class="text-4xl font-display text-primary-text tracking-tight group-hover:text-accent transition-colors">
-        {product.name}
-      </h3>
-      {product.is_recommended && <Star class="w-8 h-8 text-accent fill-accent" />}
-    </div>
-
-    <div class="flex items-center gap-4 pt-1">
-      <span class="text-3xl font-display text-accent tracking-tighter">{precio(startingPrice)}</span>
-      {product.qty_label && (
-        <span class="text-[10px] font-bold text-secondary/40 uppercase tracking-widest">
-          {product.qty_label}
-        </span>
-      )}
-    </div>
-  </div>
-
-  <!-- Contenido Derecho (Imagen opcional y Botón) -->
-  <div class="flex items-start gap-6">
-    {product.image.url && (
-      <div class="relative w-30 h-30  rounded-xl bg-secondary/5">
+  {
+    hasImage && (
+      <div class="w-full h-48 flex items-center justify-center pt-4 px-4 shrink-0">
         <img
           src={product.image.url}
-          class="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500"
           alt={product.image.alt}
+          loading="lazy"
+          class="w-full h-full object-contain drop-shadow-md transform group-hover:scale-105 transition-transform duration-500"
         />
       </div>
-    )}
+    )
+  }
 
-    {canOrder && <AddButton text="" class="transform group-hover:scale-110 transition-transform" />}
+  <div class="px-5 py-4 flex flex-col flex-1 justify-between gap-2 text-center">
+    <div>
+      <h3 class="text-primary-text font-bold text-lg tracking-wide uppercase flex items-center justify-center gap-2">
+        {product.name}
+        {product.is_recommended && (
+          <Star class="w-5 h-5 text-accent fill-accent shrink-0" />
+        )}
+      </h3>
+
+      {
+        SHOW_DESCRIPTION && product.description && (
+          <p class="text-primary-text/80 text-xs leading-relaxed line-clamp-2">
+            {product.description}
+          </p>
+        )
+      }
+    </div>
+
+    <div class="flex items-center justify-between mt-auto pt-1">
+      <span class="text-primary-text font-extrabold text-lg tracking-tight">
+        {precio(startingPrice)}
+        {product.qty_label && (
+          <span class="ml-2 text-[10px] font-bold text-primary-text/60 uppercase tracking-widest">
+            {product.qty_label}
+          </span>
+        )}
+      </span>
+
+      {canOrder && <AddButton variant="pill" text="AGREGAR" />}
+    </div>
   </div>
 </div>

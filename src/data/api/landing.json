@@ -2,7 +2,7 @@
   "meta": { "title": "Pollo a la Brasa Delivery", "tagline": "El mejor pollo a la brasa de Lima. Combos familiares y promociones." },
   "blocks": [
     { "id": "hero-main", "type": "hero", "enabled": true, "title": null, "tagline": null, "show_hours_badge": true,
-      "background_video": { "enabled": true, "src": "https://www.w3schools.com/html/mov_bbb.mp4", "type": "video/mp4", "poster": null, "autoplay": true, "loop": true, "muted": true, "preload": "auto" },
+      "background_video": { "enabled": true, "src": "/images/pollo-a-la-brasa.webm", "type": "video/webm", "poster": null, "autoplay": true, "loop": true, "muted": true, "preload": "auto" },
       "scroll_reveal": { "overlay_from": 0.15, "overlay_to": 0.7, "content_fade_px": 90, "overlay_range_vh": 45 },
       "cta_whatsapp": { "enabled": true, "label": "Pedir por WhatsApp", "href": "whatsapp", "message": "Hola, quiero pedir pollo a la brasa 🍗" },
       "cta_menu": { "enabled": true, "label": "Ver menú completo", "href": "/menu" } },

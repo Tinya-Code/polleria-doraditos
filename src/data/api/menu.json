@@ -5,25 +5,279 @@
         "id": "block-1",
         "categories": [
           {
-            "id": "cat-pollos",
-            "name": "Pollos a la Brasa",
-            "description": "Nuestros pollos a la brasa en diferentes tamaños",
+            "id": "cat-frituras",
+            "name": "FRITURAS",
+            "description": "Broaster, salchipapas y salchipollo",
             "block_id": "block-1",
             "products": [
-              { "id": "pollo-familar", "name": "Pollo Familiar", "description": "Pollo entero a la brasa con papas fritas y ensalada", "image": { "url": "https://picsum.photos/seed/doraditos-pollo-familiar/600/400", "alt": "Pollo Familiar — Doraditos" }, "price": 39.90, "price_range": { "id": "r-pollo-familiar", "name": "Tamaños", "entries": [ { "qty": 1, "price": 39.90, "label": "Familiar" }, { "qty": 1, "price": 54.90, "label": "Mega Familiar" } ], "min_price": 39.90, "max_price": 54.90 }, "qty_label": null, "is_recommended": true, "is_hidden": false, "category_id": "cat-pollos" },
-              { "id": "pollo-medio", "name": "1/2 Pollo a la Brasa", "description": "Media porción de pollo a la brasa con papas y ensalada", "image": { "url": "https://picsum.photos/seed/doraditos-pollo-medio/600/400", "alt": "1/2 Pollo — Doraditos" }, "price": 24.90, "price_range": { "id": "r-pollo-medio", "name": "Tamaños", "entries": [ { "qty": 1, "price": 24.90, "label": "1/2 Pollo" }, { "qty": 1, "price": 34.90, "label": "1/2 Pollo Grande" } ], "min_price": 24.90, "max_price": 34.90 }, "qty_label": null, "is_recommended": true, "is_hidden": false, "category_id": "cat-pollos" },
-              { "id": "pollo-cuarto", "name": "1/4 Pollo a la Brasa", "description": "Cuarto de pollo a la brasa con papas y ensalada", "image": { "url": "https://picsum.photos/seed/doraditos-pollo-cuarto/600/400", "alt": "1/4 Pollo — Doraditos" }, "price": 14.90, "price_range": { "id": "r-pollo-cuarto", "name": "Tamaños", "entries": [ { "qty": 1, "price": 14.90, "label": "1/4 Pollo" } ], "min_price": 14.90, "max_price": 14.90 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-pollos" }
+              {
+                "id": "broaster-pecho",
+                "name": "Broaster Pecho",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-broaster-pecho/600/400",
+                  "alt": "Broaster Pecho — Doraditos"
+                },
+                "price": 13.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-frituras"
+              },
+              {
+                "id": "broaster-pierna",
+                "name": "Broaster Pierna",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-broaster-pierna/600/400",
+                  "alt": "Broaster Pierna — Doraditos"
+                },
+                "price": 10.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-frituras"
+              },
+              {
+                "id": "broaster-entrepierna",
+                "name": "Broaster Entrepierna",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-broaster-entrepierna/600/400",
+                  "alt": "Broaster Entrepierna — Doraditos"
+                },
+                "price": 11.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-frituras"
+              },
+              {
+                "id": "broaster-lo-mostro",
+                "name": "Broaster a lo Mostro",
+                "description": "Chaufa + Papa y Ensalada",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-broaster-mostro/600/400",
+                  "alt": "Broaster a lo Mostro — Doraditos"
+                },
+                "price": 15.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": true,
+                "is_hidden": false,
+                "category_id": "cat-frituras"
+              },
+              {
+                "id": "salchipapas",
+                "name": "Salchipapas",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-salchipapas/600/400",
+                  "alt": "Salchipapas — Doraditos"
+                },
+                "price": 10.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-frituras"
+              },
+              {
+                "id": "salchipollo-1-4",
+                "name": "Salchipollo de 1/4 (Pierna)",
+                "description": "1/4 Pollo + Salchicha + Papa + Ensalada",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-salchipollo-1-4/600/400",
+                  "alt": "Salchipollo 1/4 — Doraditos"
+                },
+                "price": 20.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-frituras"
+              },
+              {
+                "id": "salchipollo-1-8",
+                "name": "Salchipollo de 1/8 Pollo",
+                "description": "1/8 Pollo + Salchicha + Papa + Ensalada",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-salchipollo-1-8/600/400",
+                  "alt": "Salchipollo 1/8 — Doraditos"
+                },
+                "price": 15.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-frituras"
+              }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "id": "block-3",
+        "categories": [
           {
-            "id": "cat-acompanamientos",
-            "name": "Acompañamientos",
-            "description": "Papas, ensaladas, arroz y más",
-            "block_id": "block-1",
+            "id": "cat-platos-carta",
+            "name": "PLATOS A LA CARTA",
+            "description": "Platos preparados al momento",
+            "block_id": "block-3",
             "products": [
-              { "id": "papas-grandes", "name": "Papas Fritas Grandes", "description": "Papas fritas crujientes porción grande", "image": { "url": "https://picsum.photos/seed/doraditos-papas/600/400", "alt": "Papas Fritas — Doraditos" }, "price": 8.90, "price_range": { "id": "r-papas-grandes", "name": "Tamaños", "entries": [ { "qty": 1, "price": 8.90, "label": "Grande" }, { "qty": 1, "price": 12.90, "label": "Familiar" } ], "min_price": 8.90, "max_price": 12.90 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-acompanamientos" },
-              { "id": "ensalada", "name": "Ensalada de la Casa", "description": "Ensalada fresca con lechuga, tomate y zanahoria", "image": { "url": "https://picsum.photos/seed/doraditos-ensalada/600/400", "alt": "Ensalada — Doraditos" }, "price": 7.90, "price_range": { "id": "r-ensalada", "name": "Tamaños", "entries": [ { "qty": 1, "price": 7.90, "label": "Regular" } ], "min_price": 7.90, "max_price": 7.90 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-acompanamientos" },
-              { "id": "arroz-chaufa", "name": "Arroz Chaufa", "description": "Arroz chaufa estilo peruano con pollo y verduras", "image": { "url": "https://picsum.photos/seed/doraditos-arroz/600/400", "alt": "Arroz Chaufa — Doraditos" }, "price": 12.90, "price_range": { "id": "r-arroz-chaufa", "name": "Tamaños", "entries": [ { "qty": 1, "price": 12.90, "label": "Regular" }, { "qty": 1, "price": 18.90, "label": "Familiar" } ], "min_price": 12.90, "max_price": 18.90 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-acompanamientos" }
+              {
+                "id": "lomo-saltado",
+                "name": "Lomo Saltado",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-lomo-saltado/600/400",
+                  "alt": "Lomo Saltado — Doraditos"
+                },
+                "price": 20.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": true,
+                "is_hidden": false,
+                "category_id": "cat-platos-carta"
+              },
+              {
+                "id": "saltado-pollo",
+                "name": "Saltado de Pollo",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-saltado-pollo/600/400",
+                  "alt": "Saltado de Pollo — Doraditos"
+                },
+                "price": 18.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-platos-carta"
+              },
+              {
+                "id": "tallarin-saltado",
+                "name": "Tallarín Saltado",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-tallarin-saltado/600/400",
+                  "alt": "Tallarín Saltado — Doraditos"
+                },
+                "price": 20.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-platos-carta"
+              },
+              {
+                "id": "tallarin-saltado-pollo",
+                "name": "Tallarín Saltado de Pollo",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-tallarin-pollo/600/400",
+                  "alt": "Tallarín Saltado de Pollo — Doraditos"
+                },
+                "price": 18.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-platos-carta"
+              },
+              {
+                "id": "bistec-parrilla",
+                "name": "Bistec a la Parrilla",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-bistec-parrilla/600/400",
+                  "alt": "Bistec a la Parrilla — Doraditos"
+                },
+                "price": 20.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-platos-carta"
+              },
+              {
+                "id": "bistec-pobre",
+                "name": "Bistec a lo Pobre",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-bistec-pobre/600/400",
+                  "alt": "Bistec a lo Pobre — Doraditos"
+                },
+                "price": 25.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-platos-carta"
+              },
+              {
+                "id": "churrasco-parrilla",
+                "name": "Churrasco a la Parrilla",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-churrasco-parrilla/600/400",
+                  "alt": "Churrasco a la Parrilla — Doraditos"
+                },
+                "price": 18.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-platos-carta"
+              },
+              {
+                "id": "churrasco-pobre",
+                "name": "Churrasco a lo Pobre",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-churrasco-pobre/600/400",
+                  "alt": "Churrasco a lo Pobre — Doraditos"
+                },
+                "price": 23.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-platos-carta"
+              },
+              {
+                "id": "chuleta",
+                "name": "Chuleta",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-chuleta/600/400",
+                  "alt": "Chuleta — Doraditos"
+                },
+                "price": 18.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-platos-carta"
+              },
+              {
+                "id": "filete-pechuga-parrilla",
+                "name": "Filete de Pechuga a la Parrilla",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-filete-parrilla/600/400",
+                  "alt": "Filete de Pechuga a la Parrilla — Doraditos"
+                },
+                "price": 18.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-platos-carta"
+              }
             ]
           }
         ]
@@ -32,24 +286,219 @@
         "id": "block-2",
         "categories": [
           {
-            "id": "cat-bebidas",
-            "name": "Bebidas",
-            "description": "Refrescos, jugos y cerveza",
-            "block_id": "block-2",
+            "id": "cat-chaufas",
+            "name": "CHAUFAS",
+            "description": "Chaufas y aeropuertos",
+            "block_id": "block-5",
             "products": [
-              { "id": "gaseosa-500", "name": "Gaseosa 500ml", "description": "Botella de gaseosa 500ml", "image": { "url": "https://picsum.photos/seed/doraditos-gaseosa/600/400", "alt": "Gaseosa — Doraditos" }, "price": 4.50, "price_range": { "id": "r-gaseosa-500", "name": "Tamaños", "entries": [ { "qty": 1, "price": 4.50, "label": "500ml" }, { "qty": 1, "price": 7.00, "label": "1.5L" } ], "min_price": 4.50, "max_price": 7.00 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-bebidas" },
-              { "id": "jugo-naranja", "name": "Jugo de Naranja", "description": "Jugo natural de naranja 500ml", "image": { "url": "https://picsum.photos/seed/doraditos-jugo/600/400", "alt": "Jugo de Naranja — Doraditos" }, "price": 6.90, "price_range": { "id": "r-jugo-naranja", "name": "Tamaños", "entries": [ { "qty": 1, "price": 6.90, "label": "500ml" } ], "min_price": 6.90, "max_price": 6.90 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-bebidas" },
-              { "id": "cerveza", "name": "Cerveza", "description": "Cerveza fría 330ml", "image": { "url": "https://picsum.photos/seed/doraditos-cerveza/600/400", "alt": "Cerveza — Doraditos" }, "price": 8.90, "price_range": { "id": "r-cerveza", "name": "Tamaños", "entries": [ { "qty": 1, "price": 8.90, "label": "330ml" } ], "min_price": 8.90, "max_price": 8.90 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-bebidas" }
+              {
+                "id": "mostrito-1-4",
+                "name": "Mostrito 1/4 Pollo",
+                "description": "Chaufa + Papa y Ensalada",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-mostrito-1-4/600/400",
+                  "alt": "Mostrito 1/4 Pollo — Doraditos"
+                },
+                "price": 17.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": true,
+                "is_hidden": false,
+                "category_id": "cat-chaufas"
+              },
+              {
+                "id": "mostrito-1-8",
+                "name": "Mostrito 1/8 Pollo",
+                "description": "Chaufa + Papa",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-mostrito-1-8/600/400",
+                  "alt": "Mostrito 1/8 Pollo — Doraditos"
+                },
+                "price": 12.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-chaufas"
+              },
+              {
+                "id": "chaufa-pollo",
+                "name": "Chaufa de Pollo",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-chaufa-pollo/600/400",
+                  "alt": "Chaufa de Pollo — Doraditos"
+                },
+                "price": 10.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-chaufas"
+              },
+              {
+                "id": "chaufa-carne",
+                "name": "Chaufa de Carne",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-chaufa-carne/600/400",
+                  "alt": "Chaufa de Carne — Doraditos"
+                },
+                "price": 13.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-chaufas"
+              },
+              {
+                "id": "chaufa-mixto",
+                "name": "Chaufa Mixto",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-chaufa-mixto/600/400",
+                  "alt": "Chaufa Mixto — Doraditos"
+                },
+                "price": 14.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-chaufas"
+              },
+              {
+                "id": "chaufa-salvaje",
+                "name": "Chaufa Salvaje",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-chaufa-salvaje/600/400",
+                  "alt": "Chaufa Salvaje — Doraditos"
+                },
+                "price": 14.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-chaufas"
+              },
+              {
+                "id": "aeropuerto-pollo",
+                "name": "Aeropuerto de Pollo",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-aeropuerto-pollo/600/400",
+                  "alt": "Aeropuerto de Pollo — Doraditos"
+                },
+                "price": 12.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-chaufas"
+              },
+              {
+                "id": "aeropuerto-carne",
+                "name": "Aeropuerto de Carne",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-aeropuerto-carne/600/400",
+                  "alt": "Aeropuerto de Carne — Doraditos"
+                },
+                "price": 14.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-chaufas"
+              },
+              {
+                "id": "aeropuerto-mixto",
+                "name": "Aeropuerto Mixto",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-aeropuerto-mixto/600/400",
+                  "alt": "Aeropuerto Mixto — Doraditos"
+                },
+                "price": 14.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-chaufas"
+              },
+              {
+                "id": "aeropuerto-salvaje",
+                "name": "Aeropuerto Salvaje",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-aeropuerto-salvaje/600/400",
+                  "alt": "Aeropuerto Salvaje — Doraditos"
+                },
+                "price": 14.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-chaufas"
+              }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "id": "block-5",
+        "categories": [
           {
-            "id": "cat-postres",
-            "name": "Postres",
-            "description": "Dulces para cerrar con broche de oro",
+            "id": "cat-platos-economicos",
+            "name": "PLATOS ECONOMICOS",
+            "description": "Opciones económicas del día",
             "block_id": "block-2",
             "products": [
-              { "id": "suspiro-limeño", "name": "Suspiro Limeño", "description": "Postre tradicional peruano con manjar blanco y merengue", "image": { "url": "https://picsum.photos/seed/doraditos-suspiro/600/400", "alt": "Suspiro Limeño — Doraditos" }, "price": 9.90, "price_range": { "id": "r-suspiro-limeño", "name": "Tamaños", "entries": [ { "qty": 1, "price": 9.90, "label": "Individual" } ], "min_price": 9.90, "max_price": 9.90 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-postres" },
-              { "id": "mazamorra", "name": "Mazamorra Morada", "description": "Mazamorra morada con arroz con leche", "image": { "url": "https://picsum.photos/seed/doraditos-mazamorra/600/400", "alt": "Mazamorra Morada — Doraditos" }, "price": 7.90, "price_range": { "id": "r-mazamorra", "name": "Tamaños", "entries": [ { "qty": 1, "price": 7.90, "label": "Individual" } ], "min_price": 7.90, "max_price": 7.90 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-postres" }
+              {
+                "id": "lomo-saltado-economico",
+                "name": "Lomo Saltado",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-lomo-economico/600/400",
+                  "alt": "Lomo Saltado Económico — Doraditos"
+                },
+                "price": 15.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-platos-economicos"
+              },
+              {
+                "id": "bistec-economico",
+                "name": "Bistec",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-bistec-economico/600/400",
+                  "alt": "Bistec Económico — Doraditos"
+                },
+                "price": 15.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-platos-economicos"
+              },
+              {
+                "id": "filete-pechuga-economico",
+                "name": "Filete de Pechuga",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-filete-economico/600/400",
+                  "alt": "Filete de Pechuga Económico — Doraditos"
+                },
+                "price": 15.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-platos-economicos"
+              }
             ]
           }
         ]
@@ -58,13 +507,164 @@
         "id": "block-6",
         "categories": [
           {
-            "id": "cat-salsas",
-            "name": "Salsas y Adicionales",
-            "description": "Salsas de la casa para acompañar",
+            "id": "cat-bebidas",
+            "name": "BEBIDAS",
+            "description": "Gaseosas, chicha y maracuyá",
             "block_id": "block-6",
+            "card": {
+              "flat-with-image": "product-card-bebidas"
+            },
             "products": [
-              { "id": "salsa-rocoto", "name": "Salsa de Rocoto", "description": "Salsa picante de rocoto de la casa", "image": { "url": "https://picsum.photos/seed/doraditos-salsa-rocoto/600/400", "alt": "Salsa de Rocoto — Doraditos" }, "price": 3.50, "price_range": { "id": "r-salsa-rocoto", "name": "Tamaños", "entries": [ { "qty": 1, "price": 3.50, "label": "Porción" } ], "min_price": 3.50, "max_price": 3.50 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-salsas" },
-              { "id": "salsa-aji", "name": "Salsa de Ají", "description": "Salsa de ají amarillo de la casa", "image": { "url": "https://picsum.photos/seed/doraditos-salsa-aji/600/400", "alt": "Salsa de Ají — Doraditos" }, "price": 3.50, "price_range": { "id": "r-salsa-aji", "name": "Tamaños", "entries": [ { "qty": 1, "price": 3.50, "label": "Porción" } ], "min_price": 3.50, "max_price": 3.50 }, "qty_label": null, "is_recommended": false, "is_hidden": false, "category_id": "cat-salsas" }
+              {
+                "id": "gaseosa-1-5l",
+                "name": "Gaseosa 1.5 Lt",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-gaseosa-1-5/600/400",
+                  "alt": "Gaseosa 1.5 Lt — Doraditos"
+                },
+                "price": 10.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-bebidas"
+              },
+              {
+                "id": "gaseosa-1l",
+                "name": "Gaseosa 1 Lt",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-gaseosa-1/600/400",
+                  "alt": "Gaseosa 1 Lt — Doraditos"
+                },
+                "price": 6.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-bebidas"
+              },
+              {
+                "id": "gaseosa-gordita",
+                "name": "Gordita",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-gordita/600/400",
+                  "alt": "Gordita — Doraditos"
+                },
+                "price": 5.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-bebidas"
+              },
+              {
+                "id": "gaseosa-personal",
+                "name": "Gaseosa Personal",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-gaseosa-personal/600/400",
+                  "alt": "Gaseosa Personal — Doraditos"
+                },
+                "price": 2.5,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-bebidas"
+              },
+              {
+                "id": "chicha-1l",
+                "name": "Chicha 1 Lt",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-chicha-1/600/400",
+                  "alt": "Chicha 1 Lt — Doraditos"
+                },
+                "price": 10.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-bebidas"
+              },
+              {
+                "id": "chicha-1-2l",
+                "name": "Chicha 1/2 Lt",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-chicha-1-2/600/400",
+                  "alt": "Chicha 1/2 Lt — Doraditos"
+                },
+                "price": 6.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-bebidas"
+              },
+              {
+                "id": "chicha-vaso",
+                "name": "Vaso (Chicha)",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-chicha-vaso/600/400",
+                  "alt": "Vaso de Chicha — Doraditos"
+                },
+                "price": 2.5,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-bebidas"
+              },
+              {
+                "id": "maracuya-1l",
+                "name": "Maracuyá 1 Lt",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-maracuya-1/600/400",
+                  "alt": "Maracuyá 1 Lt — Doraditos"
+                },
+                "price": 10.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-bebidas"
+              },
+              {
+                "id": "maracuya-1-2l",
+                "name": "Maracuyá 1/2 Lt",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-maracuya-1-2/600/400",
+                  "alt": "Maracuyá 1/2 Lt — Doraditos"
+                },
+                "price": 6.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-bebidas"
+              },
+              {
+                "id": "maracuya-vaso",
+                "name": "Vaso (Maracuyá)",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-maracuya-vaso/600/400",
+                  "alt": "Vaso de Maracuyá — Doraditos"
+                },
+                "price": 2.5,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-bebidas"
+              }
             ]
           }
         ]

@@ -1,46 +1,85 @@
 ---
 /**
- * AddButton — the small "＋" action button used by every card.
+ * AddButton — the reusable add-to-cart action button used by every card.
  *
- * It is presentational: the click is interpreted by the card that contains it
- * (the card knows the product), so this file only renders the button and
- * announces the click.
+ * It is presentational: the click is interpreted by the page's delegated
+ * handler via the `data-add-button` attribute (menu.astro), so this file
+ * only renders the button.
  *
  * Props:
- * - `text`        — button label; empty by default (icon only)
- * - `customClass` — extra classes appended to the button (Angular `customClass`)
- * - `class`       — extra classes for the root (Angular projected host class)
- * - `disabled`    — disables the button
+ * - `variant`  — `'icon'` (default): square accent button with a Plus icon.
+ *                `'pill'`: rounded pill with optional label + icon.
+ * - `text`     — pill label (e.g. `"AGREGAR"`); ignored for icon variant
+ *                unless provided (kept for backward compatibility).
+ * - `icon`     — which glyph to show: `'plus'` (default) or `'bag'`.
+ * - `class`    — extra classes appended to the button (positioning, sizing).
+ * - `disabled` — disables the button.
  *
- * Emits: `add-button-click` → detail `{ event }`
+ * Keeps the client contract `data-add-button` on the root element.
  */
 import Plus from '../icons/plus.astro';
+import ShoppingBag from '../icons/shopping-bag.astro';
 
 interface Props {
+  variant?: 'icon' | 'pill';
   text?: string;
+  icon?: 'plus' | 'bag';
+  /** @deprecated alias kept for existing call sites; same as `class`. */
   customClass?: string;
   class?: string;
   disabled?: boolean;
 }
 
-const { text = '', customClass = '', disabled = false, class: hostClass = '' } = Astro.props;
+const {
+  variant = 'icon',
+  text = '',
+  icon = 'plus',
+  customClass = '',
+  class: hostClass = '',
+  disabled = false,
+} = Astro.props;
 
-const classes = [
+const Icon = icon === 'bag' ? ShoppingBag : Plus;
+
+const base = [
+  'cursor-pointer',
   'bg-accent',
+  'active:scale-95',
+  'transition-all',
+  'duration-300',
+  'disabled:opacity-50',
+  'disabled:cursor-not-allowed',
+];
+
+const iconClasses = [
+  ...base,
   'px-1',
   'py-1',
-  'cursor-pointer',
   'text-primary-text',
   'text-4xl',
   'uppercase',
   'font-display',
   'font-bold',
-  'active:scale-95',
-  'transition-all',
-  'duration-300',
   'rounded-sm',
-  'disabled:opacity-50',
-  'disabled:cursor-not-allowed',
+];
+
+const pillClasses = [
+  ...base,
+  'flex',
+  'items-center',
+  'gap-1.5',
+  'px-4',
+  'py-2.5',
+  'rounded-full',
+  'font-bold',
+  'text-xs',
+  'shadow-md',
+  'hover:brightness-110',
+  text ? 'text-secondary-text' : 'text-primary-text',
+];
+
+const classes = [
+  variant === 'pill' ? pillClasses.join(' ') : iconClasses.join(' '),
   customClass,
   hostClass,
 ]
@@ -49,6 +88,21 @@ const classes = [
 ---
 
 <button data-add-button type="button" disabled={disabled} class={classes}>
-  {text}
-  <Plus class="" />
+  {
+    variant === 'pill' ? (
+      <>
+        {icon === 'bag' ? (
+          <Icon class="h-4 w-4" />
+        ) : (
+          <span class="text-sm font-black">+</span>
+        )}
+        {text && <span>{text}</span>}
+      </>
+    ) : (
+      <>
+        {text}
+        <Icon class="" />
+      </>
+    )
+  }
 </button>
