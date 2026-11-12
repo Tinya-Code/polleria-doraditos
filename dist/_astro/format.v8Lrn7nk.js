@@ -1,1 +1,0 @@
-function e(e){if(e==null||e===``)return``;let t=typeof e==`string`?Number.parseFloat(e):e;return Number.isNaN(t)?``:new Intl.NumberFormat(`es-PE`,{style:`currency`,currency:`PEN`,minimumFractionDigits:2,maximumFractionDigits:2}).format(t)}export{e as t};
