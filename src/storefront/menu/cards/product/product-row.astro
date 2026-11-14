@@ -43,6 +43,16 @@ const hasImage = !!product.image?.url;
   class="group relative w-full h-full bg-primary rounded-2xl shadow-xl overflow-hidden flex flex-col transition-all duration-300 hover:shadow-2xl cursor-pointer"
 >
   {
+    product.is_recommended && (
+      <span
+        class="absolute top-3 right-3 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-secondary/55 backdrop-blur-sm shadow-[0_2px_10px_rgba(0,0,0,0.35)]"
+        aria-label="Recomendado"
+      >
+        <Star class="w-4 h-4 text-accent fill-accent" />
+      </span>
+    )
+  }
+  {
     hasImage && (
       <div class="w-full h-48 flex items-center justify-center pt-4 px-4 shrink-0">
         <img
@@ -59,9 +69,6 @@ const hasImage = !!product.image?.url;
     <div>
       <h3 class="text-primary-text font-bold text-lg tracking-wide uppercase flex items-center justify-center gap-2">
         {product.name}
-        {product.is_recommended && (
-          <Star class="w-5 h-5 text-accent fill-accent shrink-0" />
-        )}
       </h3>
 
       {

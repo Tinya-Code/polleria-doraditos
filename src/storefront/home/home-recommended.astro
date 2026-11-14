@@ -42,20 +42,20 @@ function formatPrice(p) {
       </div>
 
       <div
-        class="flex gap-4 overflow-x-auto px-6 pb-2 snap-x snap-mandatory scroll-smooth"
+        class="flex justify-center gap-4 overflow-x-auto px-6 pb-2 snap-x snap-mandatory scroll-smooth"
         style="scrollbar-width: none; -ms-overflow-style: none;"
       >
         {products.map((product) => (
           <a
             href="/menu"
-            class="group flex-shrink-0 w-44 snap-start rounded-2xl border border-white/8 bg-surface/5 overflow-hidden hover:border-primary/40 hover:scale-[1.03] transition-all duration-200"
+            class="group flex-shrink-0 w-64 h-64 snap-start rounded-2xl border border-white/8 bg-surface/5 overflow-hidden hover:border-primary/40 hover:scale-[1.03] transition-all duration-200"
           >
-            <div class="w-full h-32 overflow-hidden bg-white/5">
+            <div class="w-full h-48 overflow-hidden bg-white/5">
               {product.image?.url ? (
                 <img
                   src={product.image.url}
                   alt={product.image.alt ?? product.name}
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-400"
+                  class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-400"
                   loading="lazy"
                 />
               ) : (
