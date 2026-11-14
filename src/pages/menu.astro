@@ -132,6 +132,15 @@ const hoursJson =
 
         <BlockCombos combos={combos} canOrder={canOrder} />
 
+        <!-- block-4: POLLO A LA BRASA — first menu.json block, right after the offer sliders -->
+        <MenuBlock
+          categories={cats("block-4")}
+          decorations={theme.blocks?.["block-4"]}
+          canOrder={canOrder}
+          outerClass="grid-cols-1 md:grid-cols-1 gap-x-12 gap-y-16 items-start"
+          cardsClass="grid-cols-2 md:grid-cols-4 gap-8"
+        />
+
         <!-- block-1: maki rail + barco parallax -->
         <MenuBlock
           categories={cats("block-1")}
@@ -162,15 +171,6 @@ const hoursJson =
           categorySectionClass="col-span-3 md:col-span-10 md:col-start-2"
           cardsClass="grid-cols-2 md:grid-cols-3 gap-8"
           sectionAttrs={{ "data-block-2": "" }}
-        />
-
-        <!-- block-4: same layout as block-2 -->
-        <MenuBlock
-          categories={cats("block-4")}
-          decorations={theme.blocks?.["block-4"]}
-          canOrder={canOrder}
-          outerClass="grid-cols-1 md:grid-cols-1 gap-x-12 gap-y-16 items-start"
-          cardsClass="grid-cols-2 md:grid-cols-4"
         />
 
         <!-- block-5: 2-up cards from mobile -->

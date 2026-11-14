@@ -2,6 +2,79 @@
   "data": {
     "blocks": [
       {
+        "id": "block-4",
+        "categories": [
+          {
+            "id": "cat-pollo-brasa",
+            "name": "POLLO A LA BRASA",
+            "description": "",
+            "block_id": "block-4",
+            "products": [
+              {
+                "id": "pollo-brasa-1",
+                "name": "1 Pollo + Papa + Ensalada + Cremas",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-combo-1-pollo/600/400",
+                  "alt": "1 Pollo — Doraditos"
+                },
+                "price": 55.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-pollo-brasa"
+              },
+              {
+                "id": "pollo-brasa-1-8",
+                "name": "1/8 Pollo + Papa + Ensalada + Cremas",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-combo-1-8/600/400",
+                  "alt": "1/8 Pollo — Doraditos"
+                },
+                "price": 10.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-pollo-brasa"
+              },
+              {
+                "id": "pollo-brasa-1-4",
+                "name": "1/4 Pollo + Papa + Ensalada + Cremas",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-combo-1-4/600/400",
+                  "alt": "1/4 Pollo — Doraditos"
+                },
+                "price": 16.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-pollo-brasa"
+              },
+              {
+                "id": "pollo-brasa-1-2",
+                "name": "1/2 Pollo + Papa + Ensalada + Cremas",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/seed/doraditos-combo-1-2/600/400",
+                  "alt": "1/2 Pollo — Doraditos"
+                },
+                "price": 30.0,
+                "price_range": null,
+                "qty_label": null,
+                "is_recommended": false,
+                "is_hidden": false,
+                "category_id": "cat-pollo-brasa"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "block-1",
         "categories": [
           {
@@ -60,7 +133,7 @@
                 "name": "Broaster a lo Mostro",
                 "description": "Chaufa + Papa y Ensalada",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-broaster-mostro/600/400",
+                  "url": "/images/menu/platos-carta/lomo-saltado.webp",
                   "alt": "Broaster a lo Mostro — Doraditos"
                 },
                 "price": 15.0,
@@ -133,7 +206,7 @@
                 "name": "Lomo Saltado",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-lomo-saltado/600/400",
+                  "url": "/images/menu/platos-carta/lomo-saltado.webp",
                   "alt": "Lomo Saltado — Doraditos"
                 },
                 "price": 20.0,
@@ -148,7 +221,7 @@
                 "name": "Saltado de Pollo",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-saltado-pollo/600/400",
+                  "url": "/images/menu/platos-carta/pollo-saltado.webp",
                   "alt": "Saltado de Pollo — Doraditos"
                 },
                 "price": 18.0,
@@ -163,7 +236,7 @@
                 "name": "Tallarín Saltado",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-tallarin-saltado/600/400",
+                  "url": "/images/menu/platos-carta/tallarin-saltado.webp",
                   "alt": "Tallarín Saltado — Doraditos"
                 },
                 "price": 20.0,
@@ -178,7 +251,7 @@
                 "name": "Tallarín Saltado de Pollo",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-tallarin-pollo/600/400",
+                  "url": "/images/menu/platos-carta/tallarin-saltado-pollo.webp",
                   "alt": "Tallarín Saltado de Pollo — Doraditos"
                 },
                 "price": 18.0,
@@ -208,7 +281,7 @@
                 "name": "Bistec a lo Pobre",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-bistec-pobre/600/400",
+                  "url": "/images/menu/platos-carta/bisteck-a-lo-pobre.webp",
                   "alt": "Bistec a lo Pobre — Doraditos"
                 },
                 "price": 25.0,
@@ -253,7 +326,7 @@
                 "name": "Chuleta",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-chuleta/600/400",
+                  "url": "/images/menu/platos-carta/chuleta.webp",
                   "alt": "Chuleta — Doraditos"
                 },
                 "price": 18.0,
@@ -268,7 +341,7 @@
                 "name": "Filete de Pechuga a la Parrilla",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-filete-parrilla/600/400",
+                  "url": "/images/menu/platos-carta/pechuga-a-la-parilla.webp",
                   "alt": "Filete de Pechuga a la Parrilla — Doraditos"
                 },
                 "price": 18.0,
@@ -296,7 +369,7 @@
                 "name": "Mostrito 1/4 Pollo",
                 "description": "Chaufa + Papa y Ensalada",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-mostrito-1-4/600/400",
+                  "url": "/images/menu/platos-carta/lomo-saltado.webp",
                   "alt": "Mostrito 1/4 Pollo — Doraditos"
                 },
                 "price": 17.0,
@@ -440,64 +513,6 @@
                 "is_recommended": false,
                 "is_hidden": false,
                 "category_id": "cat-chaufas"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "block-5",
-        "categories": [
-          {
-            "id": "cat-platos-economicos",
-            "name": "PLATOS ECONOMICOS",
-            "description": "Opciones económicas del día",
-            "block_id": "block-2",
-            "products": [
-              {
-                "id": "lomo-saltado-economico",
-                "name": "Lomo Saltado",
-                "description": "",
-                "image": {
-                  "url": "https://picsum.photos/seed/doraditos-lomo-economico/600/400",
-                  "alt": "Lomo Saltado Económico — Doraditos"
-                },
-                "price": 15.0,
-                "price_range": null,
-                "qty_label": null,
-                "is_recommended": false,
-                "is_hidden": false,
-                "category_id": "cat-platos-economicos"
-              },
-              {
-                "id": "bistec-economico",
-                "name": "Bistec",
-                "description": "",
-                "image": {
-                  "url": "https://picsum.photos/seed/doraditos-bistec-economico/600/400",
-                  "alt": "Bistec Económico — Doraditos"
-                },
-                "price": 15.0,
-                "price_range": null,
-                "qty_label": null,
-                "is_recommended": false,
-                "is_hidden": false,
-                "category_id": "cat-platos-economicos"
-              },
-              {
-                "id": "filete-pechuga-economico",
-                "name": "Filete de Pechuga",
-                "description": "",
-                "image": {
-                  "url": "https://picsum.photos/seed/doraditos-filete-economico/600/400",
-                  "alt": "Filete de Pechuga Económico — Doraditos"
-                },
-                "price": 15.0,
-                "price_range": null,
-                "qty_label": null,
-                "is_recommended": false,
-                "is_hidden": false,
-                "category_id": "cat-platos-economicos"
               }
             ]
           }
