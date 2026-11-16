@@ -14,19 +14,26 @@
   --font-display: 'Paquito', system-ui, sans-serif;
   --font-body: 'Paquito', sans-serif;
   /* Colores base */
-  --color-primary: #dc2626; /* Rojo vibrante, moderno */
-  --color-secondary: #0a0a0a; /* Negro Zinc 950, premium */
+  --color-primary: #e53935; /* Rojo vibrante: títulos y llamadas de atención */
+  --color-secondary: #120d0b; /* Café oscuro / negro carbón: fondo principal */
 
   /* Complementario */
-  --color-background: #fafafa; /* Blanco suave para balance */
-  --color-surface: #f4f4f5; /* Gris Zinc 100 para secciones */
+  --color-background: #1d1512; /* Café sutilmente más claro: barras y superficies */
+  --color-surface: #1d1512; /* Café para las tarjetas de platos */
 
   /* Acentos */
-  --color-accent: #f59e0b; /* Ámbar/Dorado, toque de elegancia */
-  --color-accent-muted: #fbbf24; /* Ámbar suave para detalles */
+  --color-accent: #ffca28; /* Amarillo dorado: precios y destacados */
+  --color-accent-muted: #f0b429; /* Dorado apagado para detalles */
 
   /* Texto */
-  --color-primary-text: #ffffff; /* Texto sobre fondos oscuros */
-  --color-secondary-text: #0a0a0a; /* Texto sobre fondos claros */
-  --color-text-accent: #dc2626; /* Destacar títulos o precios */
+  --color-primary-text: #fdfbf7; /* Blanco marfil/hueso sobre fondos oscuros */
+  --color-secondary-text: #120d0b; /* Texto sobre fondos claros */
+  --color-text-accent: #e53935; /* Destacar títulos o precios */
+}
+
+/* Base paint: every route sits on the dark brand background, so unpainted
+   gaps (body, side margins, the scaled menu shell) never show browser white. */
+html,
+body {
+  background-color: var(--color-secondary);
 }

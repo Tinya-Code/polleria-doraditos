@@ -1,16 +1,16 @@
 {
-  "meta": { "title": "Pollo a la Brasa Delivery", "tagline": "El mejor pollo a la brasa de Lima. Combos familiares y promociones." },
+  "meta": { "title": "Pollos a la Brasa Doraditos", "tagline": "El mejor pollo a la brasa de Lima. Combos familiares y promociones." },
   "blocks": [
     { "id": "hero-main", "type": "hero", "enabled": true, "title": null, "tagline": null, "show_hours_badge": true,
       "background_video": { "enabled": true, "src": "/images/pollo-a-la-brasa.webm", "type": "video/webm", "poster": null, "autoplay": true, "loop": true, "muted": true, "preload": "auto" },
-      "scroll_reveal": { "overlay_from": 0.15, "overlay_to": 0.7, "content_fade_px": 90, "overlay_range_vh": 45 },
+      "scroll_reveal": { "overlay_from": 0.15, "overlay_to": 0.7, "overlay_range_vh": 45 },
       "cta_whatsapp": { "enabled": true, "label": "Pedir por WhatsApp", "href": "whatsapp", "message": "Hola, quiero pedir pollo a la brasa 🍗" },
       "cta_menu": { "enabled": true, "label": "Ver menú completo", "href": "/menu" } },
     { "id": "promotions-strip", "type": "promotions", "enabled": true, "title": "Promociones", "badge": "Ofertas", "max_items": 4, "see_all_label": "Ver todas", "see_all_href": "/menu" },
     { "id": "recommended-strip", "type": "recommended", "enabled": true, "title": "Recomendados", "badge": "Lo mejor", "max_items": 10, "see_all_label": "Ver menú", "see_all_href": "/menu" },
     { "id": "featured-media", "type": "media", "enabled": true, "title": "Destacados", "badge": "Novedades",
       "items": [
-        { "id": "banner-martes-promo", "type": "banner", "enabled": true, "layout": "full", "image_url": "https://picsum.photos/seed/promo_martes/800/600", "alt": "Martes 2x1 — Doraditos", "title": "¡Martes 2x1!", "description": "2x1 en pollos a la brasa todos los martes.", "min_height": "260px", "cta_label": "Pedir ahora", "cta_href": "whatsapp", "cta_message": "Hola, quiero el Martes 2x1", "cta_target": "_blank" },
+        { "id": "banner-martes-promo", "type": "banner", "enabled": true, "layout": "full", "image_url": "/images/menu/platos-carta/bisteck-a-lo-pobre.webp", "alt": "Martes 2x1 — Doraditos", "title": "¡Martes 2x1!", "description": "2x1 en pollos a la brasa todos los martes.", "min_height": "260px", "cta_label": "Pedir ahora", "cta_href": "whatsapp", "cta_message": "Hola, quiero el Martes 2x1", "cta_target": "_blank" },
         { "id": "video-pollo-prep", "type": "video", "enabled": true, "layout": "half", "provider": "tiktok", "video_id": "demo_pollo_prep_001", "title": "Cómo preparamos nuestro pollo", "caption": "Proceso artesanal detrás de cada pollo." }
       ] },
     { "id": "home-navigation", "type": "nav-cards", "enabled": true,

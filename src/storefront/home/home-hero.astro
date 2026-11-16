@@ -11,7 +11,7 @@
  *
  * Block-driven config (`landing.json` → `hero` block):
  *   background_video — { enabled, src, type, poster, autoplay, loop, muted, preload }
- *   scroll_reveal    — { overlay_from, overlay_to, content_fade_px, overlay_range_vh }
+ *   scroll_reveal    — { overlay_from, overlay_to, overlay_range_vh }
  */
 import ArrowRight from "../icons/arrow-right.astro";
 import WhatsApp from "../icons/whatsapp.astro";
@@ -49,22 +49,28 @@ const videoLoop = videoCfg?.loop !== false;
 const videoMuted = videoCfg?.muted !== false;
 const videoPreload = videoCfg?.preload ?? "auto";
 
-// Scroll-linked reveal tuning — exposed as data-* so the client script reads
+// Scroll-linked overlay tuning — exposed as data-* so the client script reads
 // the same values the server rendered (no duplicated constants).
+// The tagline/badge/CTAs are NOT scroll-revealed: they fade in on a timer.
 const revealCfg = block?.scroll_reveal ?? {};
 const overlayFrom = revealCfg.overlay_from ?? 0.15;
 const overlayTo = revealCfg.overlay_to ?? 0.7;
-const contentFadePx = revealCfg.content_fade_px ?? 90;
 const overlayRangeVh = revealCfg.overlay_range_vh ?? 45;
+
+// Brand lockup — the last word of the name (DORADITOS) is rendered in gold.
+const logoSrc = "/images/logo-polleria-doraditos.png";
+const nameWords = (restaurantName ?? "").trim().split(/\s+/).filter(Boolean);
+const splitName = nameWords.length > 1;
+const namePrefix = splitName ? nameWords.slice(0, -1).join(" ") : "";
+const nameAccent = splitName ? nameWords[nameWords.length - 1] : nameWords[0] ?? "";
 ---
 
 <section
   data-hero
   data-overlay-from={overlayFrom}
   data-overlay-to={overlayTo}
-  data-fade-px={contentFadePx}
   data-overlay-vh={overlayRangeVh}
-  class="relative min-h-screen flex flex-col items-center justify-center text-center px-6 pt-20 pb-16 sm:pt-28 sm:pb-24 overflow-hidden"
+  class="relative min-h-screen flex flex-col items-center justify-center text-center px-6 pt-32 pb-16 sm:pt-40 sm:pb-24 overflow-hidden"
 >
   <!-- Video background: black fallback (bg-secondary) if it never plays. -->
   <div class="absolute inset-0 z-0 overflow-hidden bg-secondary" aria-hidden="true">
@@ -97,12 +103,34 @@ const overlayRangeVh = revealCfg.overlay_range_vh ?? 45;
     </style>
   </noscript>
 
-  <div class="relative z-10 max-w-3xl mx-auto space-y-6">
+  <div class="relative z-10 max-w-3xl mx-auto space-y-7">
+    <!-- Brand logo -->
+    <div class="flex justify-center">
+      <div class="relative flex items-center justify-center">
+        <span
+          class="absolute w-36 h-36 sm:w-44 sm:h-44 md:w-52 md:h-52 rounded-full bg-primary/35 blur-3xl"
+          aria-hidden="true"
+        ></span>
+        <img
+          src={logoSrc}
+          alt={restaurantName}
+          width="208"
+          height="208"
+          class="hero-logo relative w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 object-contain drop-shadow-[0_16px_40px_rgba(0,0,0,0.55)]"
+        />
+      </div>
+    </div>
+
     <!-- Brand headline -->
     <h1
-      class="text-6xl md:text-8xl font-display text-white leading-none tracking-tighter"
+      class="text-5xl sm:text-6xl md:text-7xl font-display text-primary-text leading-[0.95] tracking-tighter"
     >
-      {restaurantName}
+      {splitName && <span class="block">{namePrefix}</span>}
+      <span
+        class={`hero-brand text-accent drop-shadow-[0_4px_28px_rgba(229,57,53,0.5)]${splitName ? " block" : ""}`}
+      >
+        {nameAccent}
+      </span>
     </h1>
 
     <div
@@ -110,18 +138,30 @@ const overlayRangeVh = revealCfg.overlay_range_vh ?? 45;
       class="space-y-6"
       style="opacity: 0; transform: translateY(16px); pointer-events: none;"
     >
-      <p
-        class="text-lg md:text-xl text-primary-text/75 font-normal max-w-lg mx-auto leading-relaxed"
-      >
-        {tagline}
-      </p>
+      {
+        tagline && (
+          <div class="flex items-center justify-center gap-3 sm:gap-4">
+            <span
+              class="hidden sm:block h-px w-10 md:w-16 bg-gradient-to-r from-transparent to-accent"
+              aria-hidden="true"
+            />
+            <p class="font-display text-xs sm:text-sm md:text-base uppercase tracking-[0.28em] sm:tracking-[0.35em] ps-[0.3em] text-accent">
+              {tagline}
+            </p>
+            <span
+              class="hidden sm:block h-px w-10 md:w-16 bg-gradient-to-l from-transparent to-accent"
+              aria-hidden="true"
+            />
+          </div>
+        )
+      }
 
     {
       showBadge && isOpen !== null && (
         <div
           id="hero-hours-badge"
           data-state={isOpen ? "open" : "closed"}
-          class="inline-flex items-center px-4 py-2 rounded-full border border-white/10 bg-white/5 text-xs font-bold tracking-wider uppercase"
+          class="inline-flex items-center px-4 py-2 rounded-full border border-accent/30 bg-accent/10 text-xs font-bold tracking-wider uppercase text-primary-text/90"
         >
           {/* Both states are pre-rendered; the client script flips [hidden]
               so no Tailwind display utility ever fights the hidden attribute. */}
@@ -169,7 +209,7 @@ const overlayRangeVh = revealCfg.overlay_range_vh ?? 45;
             target="_blank"
             rel="noopener noreferrer"
             id="hero-whatsapp-cta"
-            class="group inline-flex items-center justify-center gap-2.5 px-7 py-3.5 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-bold rounded-2xl shadow-[0_8px_24px_rgba(16,185,129,0.3)] hover:shadow-[0_12px_30px_rgba(16,185,129,0.4)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200"
+            class="group inline-flex items-center justify-center gap-2.5 px-7 py-3.5 bg-accent hover:bg-accent-muted text-secondary text-sm font-bold rounded-2xl shadow-[0_8px_24px_rgba(255,202,40,0.28)] hover:shadow-[0_12px_30px_rgba(255,202,40,0.42)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-200"
           >
             <WhatsApp class="w-5 h-5" />
             {whatsappLabel}
@@ -181,7 +221,7 @@ const overlayRangeVh = revealCfg.overlay_range_vh ?? 45;
           <a
             href={menuHref}
             id="hero-menu-cta"
-            class="group inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white/5 hover:bg-white/10 border border-white/15 hover:border-primary/50 text-white text-sm font-bold rounded-2xl hover:scale-[1.03] active:scale-[0.97] transition-all duration-200"
+            class="group inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white/5 hover:bg-white/10 border border-white/20 hover:border-accent/70 hover:text-accent text-white text-sm font-bold rounded-2xl hover:scale-[1.03] active:scale-[0.97] transition-all duration-200"
           >
             {menuLabel}
             <ArrowRight class="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -192,6 +232,48 @@ const overlayRangeVh = revealCfg.overlay_range_vh ?? 45;
     </div><!-- /data-hero-extra -->
   </div>
 </section>
+
+<style>
+  /* "DORADITOS" — Lobster (Google Fonts), loaded in Layout.astro. */
+  .hero-brand {
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+
+  /* Tagline/badge/CTAs: hidden until the timed reveal flips them on. */
+  [data-hero-extra] {
+    transition:
+      opacity 0.7s ease,
+      transform 0.7s ease;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    [data-hero-extra] {
+      transition: none;
+    }
+  }
+
+  @keyframes hero-logo-float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .hero-logo {
+    animation: hero-logo-float 7s ease-in-out infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-logo {
+      animation: none;
+    }
+  }
+</style>
 
 <script>
   import { readBusinessHours } from "../utils/dom";
@@ -254,19 +336,21 @@ const overlayRangeVh = revealCfg.overlay_range_vh ?? 45;
 
 <script>
   /**
-   * Hero scroll reveal — video background + progressive darkening.
+   * Hero reveal — timed content + scroll-linked overlay.
    *
    * Initial state (top of the page): video playing, only the <h1> readable.
-   * As the user scrolls through the first ~45vh, `data-hero-overlay` deepens
-   * and `data-hero-extra` (tagline, hours badge, CTAs) fades/slides in.
-   * Everything is scroll-LINKED (proportional to scroll position), so
-   * scrolling back to the top restores the initial state.
+    * `data-hero-extra` (tagline, hours badge, CTAs) fades/slides in 1.2 s after
+   * load — no scroll required. The dark overlay still deepens progressively
+   * as the user scrolls through the first ~45vh (scroll-LINKED, so scrolling
+   * back to the top restores the faint veil).
    *
    * Tuning comes from `landing.json` (`hero.scroll_reveal`) and is rendered
    * onto the section as data-* attributes. With `prefers-reduced-motion`,
    * the static final state is rendered instead (content visible, deep veil,
-   * no scroll listeners).
+   * no timers or scroll listeners).
    */
+  const CONTENT_REVEAL_DELAY_MS = 1200;
+
   const initHeroReveal = () => {
     const hero = document.querySelector<HTMLElement>("[data-hero]");
     const overlay = hero?.querySelector<HTMLElement>("[data-hero-overlay]");
@@ -286,10 +370,6 @@ const overlayRangeVh = revealCfg.overlay_range_vh ?? 45;
     };
     const OVERLAY_FROM = cfg("overlayFrom", 0.15); // faint veil so the h1 stays readable at rest
     const OVERLAY_TO = cfg("overlayTo", 0.7); // deep veil once scrolled
-    const RISE_PX = 16; // initial extra content offset
-    // Content must be readable after the FIRST scroll notch (~one wheel step),
-    // while the dark veil keeps deepening progressively across ~45vh.
-    const CONTENT_RANGE_PX = cfg("fadePx", 90);
     const overlayRangeVh = cfg("overlayVh", 45);
 
     // --- Background video: play while the hero is on screen -------------
@@ -313,18 +393,27 @@ const overlayRangeVh = revealCfg.overlay_range_vh ?? 45;
       }
     }
 
+    // Show tagline/badge/CTAs (server renders them opacity:0 + inert).
+    const revealContent = () => {
+      extra.style.opacity = "1";
+      extra.style.transform = "none";
+      extra.style.pointerEvents = "";
+      extra.removeAttribute("inert");
+    };
+
     // --- Reduced motion: show the readable end state, don't animate -----
     if (reducedMotion) {
       overlay.style.opacity = `${OVERLAY_TO}`;
-      extra.style.opacity = "1";
-      extra.style.transform = "none";
-      // The server renders `pointer-events: none` for the hidden state;
-      // release it or the CTAs stay unclickable without the scroll script.
-      extra.style.pointerEvents = "";
+      revealContent();
       return;
     }
 
-    // --- Scroll-linked reveal -------------------------------------------
+     // --- Timed content reveal: 1.2 s after load, never on scroll --------
+    // Nearly hidden content must not be clickable nor focusable.
+    extra.setAttribute("inert", "");
+    window.setTimeout(revealContent, CONTENT_REVEAL_DELAY_MS);
+
+    // --- Scroll-linked overlay darkening --------------------------------
     const clamp01 = (value: number) => Math.min(1, Math.max(0, value));
     const overlayRange = () => (window.innerHeight * overlayRangeVh) / 100;
 
@@ -337,27 +426,16 @@ const overlayRangeVh = revealCfg.overlay_range_vh ?? 45;
     };
 
     let ticking = false;
-    let lastContent = -1;
     let lastVeil = -1;
     const render = () => {
       ticking = false;
       const scrolled = window.scrollY - heroTop;
-      const content = clamp01(scrolled / CONTENT_RANGE_PX);
       const veil = clamp01(scrolled / overlayRange());
       // Nothing moved: skip all style writes (no style recalculation).
-      if (content === lastContent && veil === lastVeil) return;
-      lastContent = content;
+      if (veil === lastVeil) return;
       lastVeil = veil;
 
       overlay.style.opacity = `${OVERLAY_FROM + (OVERLAY_TO - OVERLAY_FROM) * veil}`;
-      extra.style.opacity = `${content}`;
-      extra.style.transform =
-        content >= 1 ? "none" : `translateY(${(1 - content) * RISE_PX}px)`;
-
-      // Nearly hidden content must not be clickable nor focusable.
-      const hidden = content < 0.05;
-      extra.toggleAttribute("inert", hidden);
-      extra.style.pointerEvents = hidden ? "none" : "";
     };
 
     const onScroll = () => {

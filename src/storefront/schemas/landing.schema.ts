@@ -53,10 +53,10 @@ const heroScrollRevealSchema = z
     overlay_from: z.number().min(0).max(1).optional(),
     /** Overlay opacity once fully scrolled. */
     overlay_to: z.number().min(0).max(1).optional(),
-    /** Pixels of scroll needed to fully fade in tagline/badge/CTAs. */
-    content_fade_px: z.number().positive().optional(),
     /** Viewport height (vh) over which the overlay keeps deepening. */
     overlay_range_vh: z.number().positive().optional(),
+    /** @deprecated Content reveals on a load timer now, not on scroll. */
+    content_fade_px: z.number().positive().optional(),
   })
   .strict();
 
