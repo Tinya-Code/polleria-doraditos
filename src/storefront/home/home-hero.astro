@@ -58,7 +58,10 @@ const overlayTo = revealCfg.overlay_to ?? 0.7;
 const overlayRangeVh = revealCfg.overlay_range_vh ?? 45;
 
 // Brand lockup — the last word of the name (DORADITOS) is rendered in gold.
-const logoSrc = "/images/logo-polleria-doraditos.png";
+// Allusive gallo-chef image beside the name; falls back to the logo if it
+// ever fails to load.
+const heroImageSrc = "/images/gallo-chef.webp";
+const logoFallbackSrc = "/images/logo-polleria-doraditos.png";
 const nameWords = (restaurantName ?? "").trim().split(/\s+/).filter(Boolean);
 const splitName = nameWords.length > 1;
 const namePrefix = splitName ? nameWords.slice(0, -1).join(" ") : "";
@@ -104,34 +107,35 @@ const nameAccent = splitName ? nameWords[nameWords.length - 1] : nameWords[0] ??
   </noscript>
 
   <div class="relative z-10 max-w-3xl mx-auto space-y-7">
-    <!-- Brand logo -->
-    <div class="flex justify-center">
-      <div class="relative flex items-center justify-center">
+    <!-- Brand lockup: allusive image + name (column on mobile, row from sm up) -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8">
+      <div class="relative flex items-center justify-center shrink-0">
         <span
           class="absolute w-36 h-36 sm:w-44 sm:h-44 md:w-52 md:h-52 rounded-full bg-primary/35 blur-3xl"
           aria-hidden="true"
         ></span>
         <img
-          src={logoSrc}
+          src={heroImageSrc}
           alt={restaurantName}
           width="208"
           height="208"
-          class="hero-logo relative w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 object-contain drop-shadow-[0_16px_40px_rgba(0,0,0,0.55)]"
+          class="hero-logo relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 object-contain drop-shadow-[0_16px_40px_rgba(0,0,0,0.55)]"
+          onerror={`this.onerror=null; this.src='${logoFallbackSrc}'`}
         />
       </div>
-    </div>
 
-    <!-- Brand headline -->
-    <h1
-      class="text-5xl sm:text-6xl md:text-7xl font-display text-primary-text leading-[0.95] tracking-tighter"
-    >
-      {splitName && <span class="block">{namePrefix}</span>}
-      <span
-        class={`hero-brand text-accent drop-shadow-[0_4px_28px_rgba(229,57,53,0.5)]${splitName ? " block" : ""}`}
+      <!-- Brand headline -->
+      <h1
+        class="text-5xl sm:text-6xl md:text-7xl font-display text-primary-text leading-[0.95] tracking-tighter"
       >
-        {nameAccent}
-      </span>
-    </h1>
+        {splitName && <span class="block">{namePrefix}</span>}
+        <span
+          class={`hero-brand text-accent drop-shadow-[0_4px_28px_rgba(229,57,53,0.5)]${splitName ? " block" : ""}`}
+        >
+          {nameAccent}
+        </span>
+      </h1>
+    </div>
 
     <div
       data-hero-extra
@@ -145,7 +149,7 @@ const nameAccent = splitName ? nameWords[nameWords.length - 1] : nameWords[0] ??
               class="hidden sm:block h-px w-10 md:w-16 bg-gradient-to-r from-transparent to-accent"
               aria-hidden="true"
             />
-            <p class="font-display text-xs sm:text-sm md:text-base uppercase tracking-[0.28em] sm:tracking-[0.35em] ps-[0.3em] text-accent">
+            <p class="font-body text-xs sm:text-sm md:text-base uppercase tracking-[0.28em] sm:tracking-[0.35em] ps-[0.3em] text-accent">
               {tagline}
             </p>
             <span
