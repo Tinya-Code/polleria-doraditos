@@ -40,6 +40,18 @@ const {
 } = Astro.props;
 
 const restaurantName = restaurant?.name ?? settings?.name ?? "";
+
+/**
+ * Brand lockup — the last word of the name (DORADITOS) is rendered in the
+ * same Lobster face the home hero uses (`.hero-brand` in home-hero.astro).
+ */
+const nameWords = restaurantName.trim().split(/\s+/).filter(Boolean);
+const splitName = nameWords.length > 1;
+const namePrefix = splitName ? nameWords.slice(0, -1).join(" ") : "";
+const nameAccent = splitName
+  ? nameWords[nameWords.length - 1]
+  : (nameWords[0] ?? "");
+
 const address = restaurant?.address ?? "";
 const location = restaurant?.location;
 const latitude = location?.lat ?? "";
@@ -78,13 +90,13 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
 ---
 
 <header
-  class={`relative font-body bg-secondary border-b-8 border-primary px-6 pt-12 pb-16 mb-12 rounded-b-[100px] overflow-hidden ${hostClass}`}
+  class={`relative font-body bg-secondary border-b-8 border-primary px-6 pt-10 md:pt-12 pb-12 md:pb-16 mb-2 md:mb-12 rounded-b-[100px] overflow-hidden ${hostClass}`}
   style={headerBg
     ? `background-image: url(${headerBg}); background-size: cover; background-position: center;`
     : undefined}
 >
   <div
-    class={`max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 relative z-10${logoPosition === "center" ? " md:justify-center" : ""}`}
+    class={`max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-10 relative z-10${logoPosition === "center" ? " md:justify-center" : ""}`}
   >
     <!-- Logo Section -->
     <a
@@ -115,7 +127,8 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
       {
         showName ? (
           <h1 class="text-6xl md:text-8xl font-display text-white leading-none tracking-tighter">
-            {restaurantName}
+            {splitName && <span>{namePrefix} </span>}
+            <span class="brand-accent text-accent">{nameAccent}</span>
           </h1>
         ) : (
           <h1 class="sr-only">{restaurantName}</h1>
@@ -172,6 +185,16 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
     </div>
   </div>
 </header>
+
+<style>
+  /* "DORADITOS" — Lobster (Google Fonts), loaded in Layout.astro.
+     Same face as `.hero-brand` on the home page. */
+  .brand-accent {
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+</style>
 
 <script>
   document.addEventListener("click", async (event) => {

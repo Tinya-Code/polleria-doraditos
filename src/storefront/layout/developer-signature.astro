@@ -19,9 +19,9 @@ interface Props {
 }
 
 const {
-  name = 'Pedro Alejandro',
+  name = 'TinyaCode',
   phone = '51924932128',
-  image = 'https://picsum.photos/seed/dev-avatar/112/112',
+  image = '/images/tinya-code-logo.png',
   class: className = '',
 } = Astro.props;
 
@@ -38,13 +38,13 @@ const href = WhatsApp.link(phone);
       <img
         src={image}
         alt={name}
-        class="relative w-11 h-11 rounded-full object-cover grayscale group-hover:grayscale-0 ring-2 ring-white/10 group-hover:ring-primary transition-all duration-500 cursor-pointer"
+        class="relative w-11 h-11 rounded-full object-contain bg-white p-1.5 ring-2 ring-white/10 group-hover:ring-primary transition-all duration-500 cursor-pointer"
         loading="lazy"
       />
     </a>
     <div class="flex flex-col">
       <span class="text-white/40 text-[10px] uppercase tracking-[0.2em] font-bold mb-0.5">
-        Diseño & Desarrollo
+        Desarrollado por
       </span>
       <a
         href={href}
