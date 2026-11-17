@@ -10,9 +10,10 @@
    swap the family there if you self-host your brand fonts instead. */
 
 @theme {
-  /* Tipografías */
+  /* Tipografías: Paquito solo para títulos (font-display),
+     Montserrat para subtítulos y cuerpo de texto (font-body). */
   --font-display: 'Paquito', system-ui, sans-serif;
-  --font-body: 'Paquito', sans-serif;
+  --font-body: 'Montserrat', system-ui, sans-serif;
   /* Colores base */
   --color-primary: #e53935; /* Rojo vibrante: títulos y llamadas de atención */
   --color-secondary: #120d0b; /* Café oscuro / negro carbón: fondo principal */

@@ -44,10 +44,10 @@ const promotionPayload = JSON.stringify({ ...(promotion ?? {}), card: undefined 
       <h3 class="text-4xl font-display text-white">{promotion.name}</h3>
 
       <div class="flex w-full items-start mx-auto flex-col relative">
-        <span class="text-lg font-display text-primary-text/50 line-through">
+        <span class="text-lg font-body text-primary-text/50 line-through">
           {precio(promotion.price_before)}
         </span>
-        <span class="text-3xl py-1 px-3 rounded-sm bg-primary font-display text-white">
+        <span class="text-3xl py-1 px-3 rounded-sm bg-primary font-body font-bold text-white">
           {precio(promotion.price)}
         </span>
               {

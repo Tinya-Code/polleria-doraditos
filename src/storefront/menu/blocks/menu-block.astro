@@ -87,7 +87,7 @@ const hasCustomSlot = Astro.slots.has('default');
             id={`category-${cat.id}`}
             class={`flex flex-col scroll-mt-[140px] ${categorySectionClass}`.trim()}
           >
-            <TemplateSectionTitle title={cat.name ?? ''} description={cat.description || ''} />
+            <TemplateSectionTitle title={cat.name ?? ''} />
 
             <div class={`grid ${cardsClass}`}>
               {(cat.products ?? []).map((product) => (

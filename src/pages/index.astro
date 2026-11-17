@@ -7,7 +7,6 @@
  *
  * Supported block types in landing.json:
  *   - "hero"         — Hero header with open badge and dual CTAs
- *   - "promotions"   — Special deals / combos strip
  *   - "recommended"  — Horizontal scroll of recommended dishes
  *   - "media"        — Heterogeneous grid of banners / flyers / videos
  *   - "banner"       — Standalone banner
@@ -24,7 +23,6 @@ import FlyerModal from '../storefront/ui/flyer-modal.astro';
 import WhatsAppContacts from '../storefront/ui/whatsapp-contacts.astro';
 
 import HomeHero from '../storefront/home/home-hero.astro';
-import HomePromotions from '../storefront/home/home-promotions.astro';
 import HomeRecommended from '../storefront/home/home-recommended.astro';
 import HomeMedia from '../storefront/home/home-media.astro';
 import HomeNavCards from '../storefront/home/home-nav-cards.astro';
@@ -91,14 +89,6 @@ const whatsappUrl = whatsappNumber ? WhatsApp.link(whatsappNumber, whatsappMsg) 
                 tagline={tagline}
                 isOpen={isOpen}
                 openLabel={openLabel}
-                whatsappUrl={whatsappUrl}
-              />
-            );
-          case 'promotions':
-            return (
-              <HomePromotions
-                block={block}
-                promotions={promotions}
                 whatsappUrl={whatsappUrl}
               />
             );

@@ -63,7 +63,7 @@ const todayHours = businessHours[weekDayKey()] ?? null;
 ---
 
 <footer
-  class={`pt-24 pb-6 bg-secondary border-t-[12px] border-primary rounded-t-[100px] overflow-hidden relative text-white ${hostClass}`}
+  class={`pt-12 md:pt-24 pb-6 bg-secondary border-t-[12px] border-primary rounded-t-[100px] overflow-hidden relative text-white ${hostClass}`}
   style={footerBg
     ? `background-image: url(${footerBg}); background-size: cover; background-position: center;`
     : undefined}
@@ -73,7 +73,7 @@ const todayHours = businessHours[weekDayKey()] ?? null;
   <div class="max-w-7xl mx-auto px-8 relative z-10">
     <!-- Top Section: 3 Columns -->
     <div
-      class="grid grid-cols-1 md:grid-cols-3 gap-16 items-start pb-20 border-b border-white/5"
+      class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 items-start pb-8 md:pb-20 border-b border-white/5"
     >
       <!-- Left: Contact & Hours -->
       <div class="space-y-8 flex flex-col items-center text-center">
@@ -130,16 +130,13 @@ const todayHours = businessHours[weekDayKey()] ?? null;
             }
    
         </a>
-        <h2 class="text-5xl font-display tracking-tighter text-white">
-          {restaurantName}
-        </h2>
       </div>
 
       <!-- Right: Social Media -->
       <div class="space-y-8 flex flex-col items-center text-center">
         <div>
           <span class="text-2xl font-display text-primary mb-6 block"
-            >Siguenos</span
+            >Síguenos</span
           >
           <div class="flex items-center justify-center gap-5">
             {

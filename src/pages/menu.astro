@@ -12,16 +12,16 @@
  * neither at build time nor in the browser. v2 products embed their price
  * range, so there is no `price-range` join anywhere anymore (proposal §2.2/§3).
  *
- * Assembly (F7): the page also composes the menu itself — promotions,
- * combos and the seven explicit MenuBlock declarations (block-1 … block-7)
- * with their decoration slots — and projects that content through the
+ * Assembly (F7): the page also composes the menu itself — combos and the
+ * seven explicit MenuBlock declarations (block-1 … block-7) with their
+ * decoration slots — and projects that content through the
  * `menu-page` shell's slot. Construction order mirrors Angular
  * `src/app/base-template/index.ts`. The few values the client
  * scripts still need (hours, settings) ship as hidden JSON attributes
  * rendered below and read back by the script.
  *
  * DESIGN WIRING: fully declarative. Each category in menu.json carries a
- * `card` map (product-state → design key) and each combo/promotion carries a
+ * `card` map (product-state → design key) and each combo carries a
  * single `card` key; MenuBlock → Template*Card resolves them through
  * `cards/registry.ts`. This page declares no card markup at all — no slots,
  * no function children. To change a design, edit the data (or register a new
@@ -30,8 +30,8 @@
  * There is no `forkJoin`, no `isLoading` signal and no 800 ms `hidden`
  * artefact: the page ships ready.
  *
- * The product dialog is static, so one pre-rendered instance per product and
- * promotion (44 hosts, all `hidden`) is shipped in the page; the script below
+ * The product dialog is static, so one pre-rendered instance per product
+ * (all `hidden`) is shipped in the page; the script below
  * reveals the host matching the clicked card's id
  * (`openDialog()` → `[data-product-detail-host="<id>"]`). Nothing is refilled
  * from the `data-product` payload — the content is already in the markup.
@@ -45,7 +45,6 @@ import MenuPage from "../storefront/layout/menu-page.astro";
 import CategoryNav from "../storefront/menu/category-nav.astro";
 import MenuBlock from "../storefront/menu/blocks/menu-block.astro";
 import BlockCombos from "../storefront/menu/blocks/block-combos.astro";
-import BlockPromotions from "../storefront/menu/blocks/block-promotions.astro";
 import IllustrationCell from "../storefront/menu/blocks/illustration-cell.astro";
 import CartTrigger from "../storefront/commerce/cart/cart-trigger.astro";
 import WhatsAppButton from "../storefront/ui/whatsapp-button.astro";
@@ -128,8 +127,6 @@ const hoursJson =
       theme={theme}
     >
       <div class:list={["h-full w-auto mx-2", hasContent && "py-12"]}>
-        <BlockPromotions promotions={promotions} canOrder={canOrder} />
-
         <BlockCombos combos={combos} canOrder={canOrder} />
 
         <!-- block-4: POLLO A LA BRASA — first menu.json block, right after the offer sliders -->
@@ -141,24 +138,24 @@ const hoursJson =
           cardsClass="grid-cols-2 md:grid-cols-4 gap-8"
         />
 
-        <!-- block-1: maki rail + barco parallax -->
+        <!-- block-1: FRITURAS — cards flush left, papas fritas parallax on the right (hidden < md) -->
         <MenuBlock
           categories={cats("block-1")}
           decorations={theme.blocks?.["block-1"]}
           canOrder={canOrder}
           outerClass="grid-cols-4 md:grid-cols-12 gap-x-12 gap-y-16"
-          categorySectionClass="col-span-3 md:col-span-8"
+          categorySectionClass="col-span-4 md:col-span-8"
           cardsClass="grid-cols-2 md:grid-cols-3 gap-8"
           sectionAttrs={{ "data-block-1": "" }}
         />
 
-        <!-- block-3: full-width header row with the alitas decorations -->
+        <!-- block-3: PLATOS A LA CARTA — cards flush left, wok saltado parallax on the right (hidden < md) -->
         <MenuBlock
           categories={cats("block-3")}
           decorations={theme.blocks?.["block-3"]}
           canOrder={canOrder}
           outerClass="relative grid-cols-1 md:grid-cols-12 gap-x-12 gap-y-8 items-start"
-          categorySectionClass="col-span-12 md:col-span-8"
+          categorySectionClass="col-span-1 md:col-span-8"
           cardsClass="grid-cols-2 md:grid-cols-3 gap-8"
         />
 
@@ -167,7 +164,7 @@ const hoursJson =
           categories={cats("block-2")}
           decorations={theme.blocks?.["block-2"]}
           canOrder={canOrder}
-          outerClass="grid-cols-4 md:grid-cols-12 gap-x-12 gap-y-16"
+          outerClass="grid-cols-2 md:grid-cols-12 gap-x-12 gap-y-16"
           categorySectionClass="col-span-3 md:col-span-10 md:col-start-2"
           cardsClass="grid-cols-2 md:grid-cols-3 gap-8"
           sectionAttrs={{ "data-block-2": "" }}
@@ -178,22 +175,22 @@ const hoursJson =
           categories={cats("block-5")}
           decorations={theme.blocks?.["block-5"]}
           canOrder={canOrder}
-          outerClass="grid-cols-4 md:grid-cols-12 gap-x-12 gap-y-16"
+          outerClass="grid-cols-2 md:grid-cols-12 gap-x-12 gap-y-16"
           categorySectionClass="col-span-3 md:col-span-10 md:col-start-2"
           cardsClass="grid-cols-2 md:grid-cols-3 gap-8"
         />
 
-        <!-- block-6: cocktail column decoration on the left.
+        <!-- block-6: BEBIDAS — no side decoration, so the category takes the
+             full width and the card grid grows with the viewport.
              Its category's `card` map in menu.json points both `range-*`
              states at the pizza designs and `flat-with-image` at the bebidas
              card — that data is the whole override mechanism now. -->
         <MenuBlock
           categories={cats("block-6")}
-          decorations={theme.blocks?.["block-6"]}
           canOrder={canOrder}
-          outerClass="grid-cols-5 md:grid-cols-12 md:gap-12 items-start"
-          categorySectionClass="w-full col-span-4 md:col-span-8"
-          cardsClass="grid-cols-2 md:grid-cols-3 gap-6"
+          outerClass="grid-cols-1 items-start"
+          categorySectionClass="w-full"
+          cardsClass="grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6 lg:gap-8"
         />
 
         <!-- block-7: dessert illustration cell -->
