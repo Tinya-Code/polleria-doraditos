@@ -42,7 +42,7 @@ const comboPayload = JSON.stringify({ ...(combo ?? {}), card: undefined });
           class="w-full h-full object-cover transition-transform duration-300"
         />
       </div>
-      <p class="absolute -bottom-4 -left-4 translate-x-1/2 py-1 px-4 rounded-sm tracking-widest bg-primary font-display text-white text-xl z-10">
+      <p class="absolute -bottom-4 -left-4 translate-x-1/2 py-1 px-4 rounded-sm tracking-widest bg-primary font-body font-bold text-white text-xl z-10">
         {precio(combo.price)}
       </p>
       {
@@ -57,7 +57,7 @@ const comboPayload = JSON.stringify({ ...(combo ?? {}), card: undefined });
 
       {combo.description && (
         <div class="flex gap-3">
-          <p class="text-primary-text/70 max-w-xs text-center font-body leading-relaxed line-clamp-3">
+          <p class="text-base sm:text-lg text-primary-text/70 max-w-xs text-center font-body leading-relaxed line-clamp-3">
             {combo.description}
           </p>
         </div>
