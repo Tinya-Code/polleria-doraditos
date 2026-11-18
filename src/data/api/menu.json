@@ -15,7 +15,7 @@
                 "name": "1 Pollo + Papa + Ensalada + Cremas",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-combo-1-pollo/600/400",
+                  "url": "/images/menu/pollo-a-la-brasa/pollo-a-la-brasa-1.webp",
                   "alt": "1 Pollo — Doraditos"
                 },
                 "price": 55.0,
@@ -30,7 +30,7 @@
                 "name": "1/8 Pollo + Papa + Ensalada + Cremas",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-combo-1-8/600/400",
+                  "url": "/images/menu/pollo-a-la-brasa/pollo-a-la-brasa-1-8.webp",
                   "alt": "1/8 Pollo — Doraditos"
                 },
                 "price": 10.0,
@@ -45,7 +45,7 @@
                 "name": "1/4 Pollo + Papa + Ensalada + Cremas",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-combo-1-4/600/400",
+                  "url": "/images/menu/pollo-a-la-brasa/pollo-a-la-brasa-1-4.webp",
                   "alt": "1/4 Pollo — Doraditos"
                 },
                 "price": 16.0,
@@ -60,7 +60,7 @@
                 "name": "1/2 Pollo + Papa + Ensalada + Cremas",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-combo-1-2/600/400",
+                  "url": "/images/menu/pollo-a-la-brasa/pollo-a-la-brasa-1-2.webp",
                   "alt": "1/2 Pollo — Doraditos"
                 },
                 "price": 30.0,
