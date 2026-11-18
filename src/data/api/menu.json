@@ -88,7 +88,7 @@
                 "name": "Broaster Pecho",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-broaster-pecho/600/400",
+                  "url": "/images/menu/frituras/pollo-broaster-pecho.webp",
                   "alt": "Broaster Pecho — Doraditos"
                 },
                 "price": 13.0,
@@ -103,7 +103,7 @@
                 "name": "Broaster Pierna",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-broaster-pierna/600/400",
+                  "url": "/images/menu/frituras/broaster-pierna.webp",
                   "alt": "Broaster Pierna — Doraditos"
                 },
                 "price": 10.0,
@@ -118,7 +118,7 @@
                 "name": "Broaster Entrepierna",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-broaster-entrepierna/600/400",
+                  "url": "/images/menu/frituras/broster-entrepierna.webp",
                   "alt": "Broaster Entrepierna — Doraditos"
                 },
                 "price": 11.0,
@@ -133,7 +133,7 @@
                 "name": "Broaster a lo Mostro",
                 "description": "Chaufa + Papa y Ensalada",
                 "image": {
-                  "url": "/images/menu/platos-carta/lomo-saltado.webp",
+                  "url": "/images/menu/frituras/broster-mostrito.webp",
                   "alt": "Broaster a lo Mostro — Doraditos"
                 },
                 "price": 15.0,
@@ -148,7 +148,7 @@
                 "name": "Salchipapas",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-salchipapas/600/400",
+                  "url": "/images/menu/frituras/salchipapa.webp",
                   "alt": "Salchipapas — Doraditos"
                 },
                 "price": 10.0,
@@ -163,7 +163,7 @@
                 "name": "Salchipollo de 1/4 (Pierna)",
                 "description": "1/4 Pollo + Salchicha + Papa + Ensalada",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-salchipollo-1-4/600/400",
+                  "url": "/images/menu/frituras/salchipollo-1-4.webp",
                   "alt": "Salchipollo 1/4 — Doraditos"
                 },
                 "price": 20.0,
@@ -178,7 +178,7 @@
                 "name": "Salchipollo de 1/8 Pollo",
                 "description": "1/8 Pollo + Salchicha + Papa + Ensalada",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-salchipollo-1-8/600/400",
+                  "url": "/images/menu/frituras/salchipollo-1-8.webp",
                   "alt": "Salchipollo 1/8 — Doraditos"
                 },
                 "price": 15.0,
@@ -369,7 +369,7 @@
                 "name": "Mostrito 1/4 Pollo",
                 "description": "Chaufa + Papa y Ensalada",
                 "image": {
-                  "url": "/images/menu/platos-carta/lomo-saltado.webp",
+                  "url": "/images/menu/chaufas/chaufa-pollo-1-4.webp",
                   "alt": "Mostrito 1/4 Pollo — Doraditos"
                 },
                 "price": 17.0,
@@ -384,7 +384,7 @@
                 "name": "Mostrito 1/8 Pollo",
                 "description": "Chaufa + Papa",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-mostrito-1-8/600/400",
+                  "url": "/images/menu/chaufas/chaufa-pollo-1-8.webp",
                   "alt": "Mostrito 1/8 Pollo — Doraditos"
                 },
                 "price": 12.0,
@@ -399,7 +399,7 @@
                 "name": "Chaufa de Pollo",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-chaufa-pollo/600/400",
+                  "url": "/images/menu/chaufas/chaufa-pollo.webp",
                   "alt": "Chaufa de Pollo — Doraditos"
                 },
                 "price": 10.0,
@@ -414,7 +414,7 @@
                 "name": "Chaufa de Carne",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-chaufa-carne/600/400",
+                  "url": "/images/menu/chaufas/chaufa-carne.webp",
                   "alt": "Chaufa de Carne — Doraditos"
                 },
                 "price": 13.0,
@@ -429,7 +429,7 @@
                 "name": "Chaufa Mixto",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-chaufa-mixto/600/400",
+                  "url": "/images/menu/chaufas/chaufa-mixto.webp",
                   "alt": "Chaufa Mixto — Doraditos"
                 },
                 "price": 14.0,
@@ -444,7 +444,7 @@
                 "name": "Chaufa Salvaje",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-chaufa-salvaje/600/400",
+                  "url": "/images/menu/chaufas/aeropuerto-salvaje.webp",
                   "alt": "Chaufa Salvaje — Doraditos"
                 },
                 "price": 14.0,
@@ -459,7 +459,7 @@
                 "name": "Aeropuerto de Pollo",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-aeropuerto-pollo/600/400",
+                  "url": "/images/menu/chaufas/aeropuerto-pollo.webp",
                   "alt": "Aeropuerto de Pollo — Doraditos"
                 },
                 "price": 12.0,
@@ -474,7 +474,7 @@
                 "name": "Aeropuerto de Carne",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-aeropuerto-carne/600/400",
+                  "url": "/images/menu/chaufas/aeropuerto-carne.webp",
                   "alt": "Aeropuerto de Carne — Doraditos"
                 },
                 "price": 14.0,
@@ -489,7 +489,7 @@
                 "name": "Aeropuerto Mixto",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-aeropuerto-mixto/600/400",
+                  "url": "/images/menu/chaufas/aeropuerto-mixto.webp",
                   "alt": "Aeropuerto Mixto — Doraditos"
                 },
                 "price": 14.0,
@@ -504,7 +504,7 @@
                 "name": "Aeropuerto Salvaje",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-aeropuerto-salvaje/600/400",
+                  "url": "/images/menu/chaufas/aeropuerto-salvaje.webp",
                   "alt": "Aeropuerto Salvaje — Doraditos"
                 },
                 "price": 14.0,
