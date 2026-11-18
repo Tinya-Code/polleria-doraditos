@@ -3,11 +3,12 @@
     {
       "id": "combo-super",
       "name": "Super Combo",
-      "description": "1 Pollo + 1/2 Pollo + Papas + Ensalada + Cremas",
+      "description": "Para compartir en familia",
       "image": {
         "url": "/images/menu/combos/wvc8wg6m9saimiqekvf0.webp",
         "alt": "Super Combo — Doraditos"
       },
+      "includes": ["1 Pollo", "1/2 Pollo", "Papas", "Ensalada", "Cremas"],
       "price": 80.0,
       "price_before": null,
       "card": "combo-card-pizza"
@@ -15,11 +16,12 @@
     {
       "id": "combo-doradito",
       "name": "Combo Doradito",
-      "description": "1 Pollo + Papa + Ensalada + Cremas + Gaseosa 1.5 Lt o 1/4 Pollo",
+      "description": "",
       "image": {
         "url": "https://res.cloudinary.com/dzdlyynhv/image/upload/v1784489241/combos/mc6wirr6uxhjsrgr7qta.png",
         "alt": "Combo Doradito — Doraditos"
       },
+      "includes": ["1 Pollo", "Papa", "Ensalada", "Cremas", "Gaseosa 1.5 Lt o 1/4 Pollo"],
       "price": 75.0,
       "price_before": null,
       "card": "combo-card-pizza"
@@ -27,11 +29,12 @@
     {
       "id": "combo-familiar",
       "name": "Combo Familiar",
-      "description": "1 Pollo + Papa + Ensalada + Cremas + Gaseosa 1.5 Lt.",
+      "description": "Ideal para toda la familia",
       "image": {
         "url": "https://res.cloudinary.com/dzdlyynhv/image/upload/v1784820272/tinyafood/cg6nrkhzjmyobzhkcuxj.png",
         "alt": "Combo Familiar — Doraditos"
       },
+      "includes": ["1 Pollo", "Papa", "Ensalada", "Cremas", "Gaseosa 1.5 Lt."],
       "price": 65.0,
       "price_before": null,
       "card": "combo-card-pizza"
@@ -39,11 +42,12 @@
     {
       "id": "combo-duo",
       "name": "Combo Dúo",
-      "description": "1/2 Pollo + Cremas + Ensalada + Papa + Gaseosa Gordita",
+      "description": "Perfecto para dos",
       "image": {
         "url": "/images/menu/combos/rmuy1zxasnhxdjwjynxr.webp",
         "alt": "Combo Dúo — Doraditos"
       },
+      "includes": ["1/2 Pollo", "Cremas", "Ensalada", "Papa", "Gaseosa Gordita"],
       "price": 33.0,
       "price_before": null,
       "card": "combo-card-pizza"
@@ -51,11 +55,12 @@
     {
       "id": "combo-personal",
       "name": "Combo Personal",
-      "description": "1/4 de Pollo + Gaseosa Personal",
+      "description": "Lista para disfrutar",
       "image": {
         "url": "/images/menu/combos/xkyaehyo99xnzallsuaz.webp",
         "alt": "Combo Personal — Doraditos"
       },
+      "includes": ["1/4 de Pollo", "Gaseosa Personal"],
       "price": 17.0,
       "price_before": null,
       "card": "combo-card-pizza"
