@@ -17,7 +17,7 @@
       "name": "Combo Doradito",
       "description": "1 Pollo + Papa + Ensalada + Cremas + Gaseosa 1.5 Lt o 1/4 Pollo",
       "image": {
-        "url": "https://picsum.photos/seed/doraditos-combo-doradito/600/400",
+        "url": "https://res.cloudinary.com/dzdlyynhv/image/upload/v1784489241/combos/mc6wirr6uxhjsrgr7qta.png",
         "alt": "Combo Doradito — Doraditos"
       },
       "price": 75.0,
@@ -41,7 +41,7 @@
       "name": "Combo Dúo",
       "description": "1/2 Pollo + Cremas + Ensalada + Papa + Gaseosa Gordita",
       "image": {
-        "url": "https://picsum.photos/seed/doraditos-combo-duo/600/400",
+        "url": "/images/menu/combos/rmuy1zxasnhxdjwjynxr.webp",
         "alt": "Combo Dúo — Doraditos"
       },
       "price": 33.0,
@@ -53,7 +53,7 @@
       "name": "Combo Personal",
       "description": "1/4 de Pollo + Gaseosa Personal",
       "image": {
-        "url": "https://picsum.photos/seed/doraditos-combo-personal/600/400",
+        "url": "/images/menu/combos/xkyaehyo99xnzallsuaz.webp",
         "alt": "Combo Personal — Doraditos"
       },
       "price": 17.0,

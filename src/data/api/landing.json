@@ -70,11 +70,11 @@
           "type": "banner",
           "enabled": true,
           "layout": "full",
-          "image_url": "/images/galeria/plato-foto-8.jpeg",
+          "image_url": "/images/flayers/Improve_image_quality_bc8cc737.webp",
           "alt": "Martes 2x1 — Doraditos",
-          "title": "¡Agua America!",
+          "title": "¡Agua Mineral!",
           "description": "Promocion 10 lt. x 11 soles - entrega en local",
-          "min_height": "300px",
+          "min_height": "350px",
           "cta_label": "Pedir ahora",
           "cta_href": "whatsapp",
           "cta_message": "Hola, quiero informacion",
@@ -87,7 +87,7 @@
           "layout": "half",
           "provider": "tiktok",
           "video_id": "7704858044626144530",
-          "title": "Venta de agua AMERICA",
+          "title": "Venta de agua Mineral",
           "caption": "Promocion 10 lt. x 11 soles - entrega en local"
         }
       ]

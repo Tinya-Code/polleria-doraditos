@@ -30,78 +30,35 @@
         {
           "slot": "left",
           "type": "group",
-          "containerClass": "justify-between flex col-span-4 h-60 md:hidden",
+          "containerClass": "justify-between flex col-span-12 h-60 md:col-span-12 md:h-full ",
           "images": [
             {
               "src": "/images/decorators/frituras-papas-fritas-mobile.webp",
-              "alt": "Papas fritas",
-              "class": "h-full max-w-[46%] object-contain"
+              "alt": "Alitas Fondo",
+              "class": "h-full md:h-auto w-80 md:w-auto md:absolute top-40 -right-20"
             },
             {
-              "src": "/images/decorators/frituras-salsas-mobile.webp",
-              "alt": "Salsas",
-              "class": "h-full max-w-[46%] object-contain"
+              "src": "/images/menu/frituras/pollo-broaster-pecho.webp",
+              "alt": "Alitas 2 Fondo",
+              "class": "h-full md:h-90  md:w-auto md:absolute bottom-40 -right-20"
             }
           ]
-        },
-        {
-          "slot": "right",
-          "type": "image",
-          "src": "/images/decorators/papas-fritas.webp",
-          "alt": "Papas fritas",
-          "containerClass": "relative hidden md:block col-span-1 md:col-span-4 h-full",
-          "class": "absolute top-0 -right-28 md:-right-24 min-w-[300px] md:min-w-[460px] object-contain will-change-transform transition-transform duration-75 ease-out",
-          "animation": "parallax"
         }
       ],
       "block-3": [
         {
-          "slot": "left",
-          "type": "group",
-          "containerClass": "justify-between flex col-span-4 h-60 md:hidden",
-          "images": [
-            {
-              "src": "/images/decorators/platos-a-la-carta-tallarin-saltado-mobile.webp",
-              "alt": "Tallarín saltado",
-              "class": "h-full max-w-[42%] object-contain"
-            },
-            {
-              "src": "/images/decorators/platos-a-la-carta-wok-mobile.webp",
-              "alt": "Wok saltado",
-              "class": "h-full max-w-[55%] object-contain"
-            }
-          ]
-        },
-        {
           "slot": "right",
           "type": "image",
           "src": "/images/decorators/wok-saltado.webp",
-          "alt": "Wok saltado",
-          "containerClass": "relative hidden md:block col-span-1 md:col-span-2 h-full",
+          "alt": "Barco Decoración",
+          "containerClass": "relative block col-span-1 md:col-span-2 h-full",
           "class": "absolute top-0 -right-28 md:-right-48 min-w-[300px] md:min-w-[400px] object-contain will-change-transform transition-transform duration-75 ease-out",
-          "animation": "parallax"
+          "animation": "parallax",
+          "attrs": {
+            "data-barco": ""
+          }
         }
-      ],
-      "block-4": [
-        {
-          "slot": "left",
-          "type": "group",
-          "containerClass": "justify-between flex col-span-1 h-60 md:hidden",
-          "images": [
-            {
-              "src": "/images/frituras/Pollo_a_la_brasa_poster_a570dfb1.webp",
-              "alt": "Pollo a la brasa",
-              "class": "h-full max-w-[46%] object-contain"
-            },
-            {
-              "src": "/images/frituras/Pollo_a_la_brasa_poster_a570dfb1.webp",
-              "alt": "Pollo a la brasa",
-              "class": "h-full max-w-[46%] object-contain"
-            }
-          ]
-        }
-      ],
-      "block-6": []
+      ]
     }
   }
 }
