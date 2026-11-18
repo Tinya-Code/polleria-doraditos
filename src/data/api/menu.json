@@ -88,7 +88,9 @@
                 "name": "Broaster Pecho",
                 "description": "",
                 "image": {
+
                   "url": "/images/frituras/Pollo_a_la_brasa_poster_a570dfb1.webp",
+
                   "alt": "Broaster Pecho — Doraditos"
                 },
                 "price": 13.0,
@@ -103,7 +105,9 @@
                 "name": "Broaster Pierna",
                 "description": "",
                 "image": {
-                  "url": "/images/frituras/Pollo_a_la_brasa_poster_a570dfb1.webp",
+
+                  "url": "/images/menu/frituras/broaster-pierna.webp",
+
                   "alt": "Broaster Pierna — Doraditos"
                 },
                 "price": 10.0,
@@ -118,7 +122,9 @@
                 "name": "Broaster Entrepierna",
                 "description": "",
                 "image": {
-                  "url": "/images/frituras/Pollo_a_la_brasa_poster_a570dfb1.webp",
+
+                  "url": "/images/menu/frituras/broster-entrepierna.webp",
+
                   "alt": "Broaster Entrepierna — Doraditos"
                 },
                 "price": 11.0,
@@ -133,7 +139,9 @@
                 "name": "Broaster a lo Mostro",
                 "description": "Chaufa + Papa y Ensalada",
                 "image": {
+
                   "url": "https://res.cloudinary.com/dzdlyynhv/image/upload/v1784268883/tinyafood/aduigx7flgmrtlkicpcr.png",
+
                   "alt": "Broaster a lo Mostro — Doraditos"
                 },
                 "price": 15.0,
@@ -148,7 +156,9 @@
                 "name": "Salchipapas",
                 "description": "",
                 "image": {
+
                   "url": "https://res.cloudinary.com/dzdlyynhv/image/upload/v1784313280/tinyafood/xhnrh2i6a5a6a7ir3rvo.png",
+
                   "alt": "Salchipapas — Doraditos"
                 },
                 "price": 10.0,
@@ -163,7 +173,9 @@
                 "name": "Salchipollo de 1/4 (Pierna)",
                 "description": "1/4 Pollo + Salchicha + Papa + Ensalada",
                 "image": {
+
                   "url": "https://res.cloudinary.com/dzdlyynhv/image/upload/v1784862238/tinyafood/qdlny6hrkrrmjc4ql15e.png",
+
                   "alt": "Salchipollo 1/4 — Doraditos"
                 },
                 "price": 20.0,
@@ -178,7 +190,9 @@
                 "name": "Salchipollo de 1/8 Pollo",
                 "description": "1/8 Pollo + Salchicha + Papa + Ensalada",
                 "image": {
+
                   "url": "https://res.cloudinary.com/dzdlyynhv/image/upload/v1784862238/tinyafood/qdlny6hrkrrmjc4ql15e.png",
+
                   "alt": "Salchipollo 1/8 — Doraditos"
                 },
                 "price": 15.0,
@@ -369,7 +383,9 @@
                 "name": "Mostrito 1/4 Pollo",
                 "description": "Chaufa + Papa y Ensalada",
                 "image": {
+
                   "url": "https://res.cloudinary.com/dzdlyynhv/image/upload/v1784274444/tinyafood/nvnlwmy2acjpm6eqjcct.png",
+
                   "alt": "Mostrito 1/4 Pollo — Doraditos"
                 },
                 "price": 17.0,
@@ -384,7 +400,9 @@
                 "name": "Mostrito 1/8 Pollo",
                 "description": "Chaufa + Papa",
                 "image": {
+
                   "url": "https://res.cloudinary.com/dzdlyynhv/image/upload/v1784822113/tinyafood/aueqmepj6fl2oqtfgmyq.png",
+
                   "alt": "Mostrito 1/8 Pollo — Doraditos"
                 },
                 "price": 12.0,
@@ -399,7 +417,7 @@
                 "name": "Chaufa de Pollo",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-chaufa-pollo/600/400",
+                  "url": "/images/menu/chaufas/chaufa-pollo.webp",
                   "alt": "Chaufa de Pollo — Doraditos"
                 },
                 "price": 10.0,
@@ -414,7 +432,7 @@
                 "name": "Chaufa de Carne",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-chaufa-carne/600/400",
+                  "url": "/images/menu/chaufas/chaufa-carne.webp",
                   "alt": "Chaufa de Carne — Doraditos"
                 },
                 "price": 13.0,
@@ -429,7 +447,7 @@
                 "name": "Chaufa Mixto",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-chaufa-mixto/600/400",
+                  "url": "/images/menu/chaufas/chaufa-mixto.webp",
                   "alt": "Chaufa Mixto — Doraditos"
                 },
                 "price": 14.0,
@@ -444,7 +462,7 @@
                 "name": "Chaufa Salvaje",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-chaufa-salvaje/600/400",
+                  "url": "/images/menu/chaufas/aeropuerto-salvaje.webp",
                   "alt": "Chaufa Salvaje — Doraditos"
                 },
                 "price": 14.0,
@@ -459,7 +477,9 @@
                 "name": "Aeropuerto de Pollo",
                 "description": "",
                 "image": {
+
                   "url": "/images/menu/chaufas/Pollo_a_la_brasa_poster_a570dfb1 (1).webp",
+
                   "alt": "Aeropuerto de Pollo — Doraditos"
                 },
                 "price": 12.0,
@@ -474,7 +494,9 @@
                 "name": "Aeropuerto de Carne",
                 "description": "",
                 "image": {
-                  "url": "/images/menu/chaufas/Pollo_a_la_brasa_poster_a570dfb1 (1).webp",
+
+                  "url": "/images/menu/chaufas/aeropuerto-carne.webp",
+
                   "alt": "Aeropuerto de Carne — Doraditos"
                 },
                 "price": 14.0,
@@ -489,7 +511,9 @@
                 "name": "Aeropuerto Mixto",
                 "description": "",
                 "image": {
-                  "url": "/images/menu/chaufas/Pollo_a_la_brasa_poster_a570dfb1 (1).webp",
+
+                  "url": "/images/menu/chaufas/aeropuerto-mixto.webp",
+
                   "alt": "Aeropuerto Mixto — Doraditos"
                 },
                 "price": 14.0,
@@ -504,7 +528,9 @@
                 "name": "Aeropuerto Salvaje",
                 "description": "",
                 "image": {
-                  "url": "/images/menu/chaufas/Pollo_a_la_brasa_poster_a570dfb1 (1).webp",
+
+                  "url": "/images/menu/chaufas/aeropuerto-salvaje.webp",
+
                   "alt": "Aeropuerto Salvaje — Doraditos"
                 },
                 "price": 14.0,
