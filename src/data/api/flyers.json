@@ -3,8 +3,26 @@
   "delay_seconds": 5,
   "show_once_per_session": true,
   "items": [
-    { "id": "flyer-martes-2x1", "title": "Martes 2x1", "image": "https://picsum.photos/seed/doraditos-flyer-martes/600/800", "alt": "Martes 2x1 en pollos", "link": null },
-    { "id": "flyer-jueves-descuento", "title": "Jueves 20% Descuento", "image": "https://picsum.photos/seed/doraditos-flyer-jueves/600/800", "alt": "20% descuento en combos familiares", "link": null },
-    { "id": "flyer-domingo", "title": "Domingo Familiar", "image": "https://picsum.photos/seed/doraditos-flyer-domingo/600/800", "alt": "Domingo familiar con postre gratis", "link": null }
+    {
+      "id": "flyer-martes-2x1",
+      "title": "Martes 2x1",
+      "image": "/images/flayers/WhatsApp Image 2026-11-05 at 19.50.35.jpeg",
+      "alt": "Martes 2x1 en pollos",
+      "link": null
+    },
+    {
+      "id": "flyer-jueves-descuento",
+      "title": "Jueves 20% Descuento",
+      "image": "/images/flayers/WhatsApp Image 2026-11-16 at 20.28.06.jpeg",
+      "alt": "20% descuento en combos familiares",
+      "link": null
+    },
+    {
+      "id": "flyer-domingo",
+      "title": "Domingo Familiar",
+      "image": "/images/flayers/WhatsApp Image 2026-11-16 at 20.28.07.jpeg",
+      "alt": "Domingo familiar con postre gratis",
+      "link": null
+    }
   ]
 }

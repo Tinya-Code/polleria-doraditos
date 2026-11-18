@@ -65,9 +65,9 @@ const hasImage = !!product.image?.url;
     )
   }
 
-  <div class="px-5 py-4 flex flex-col flex-1 justify-between gap-2 text-center">
+  <div class="px-4 py-4 flex flex-col flex-1 justify-between gap-2 ">
     <div>
-      <h3 class="text-primary-text font-bold text-lg tracking-wide uppercase flex items-center justify-center gap-2">
+      <h3 class="text-primary-text font-display  text-4xl md:text-3xl tracking-wide uppercase flex items-center justify-center gap-2">
         {product.name}
       </h3>
 
@@ -80,8 +80,8 @@ const hasImage = !!product.image?.url;
       }
     </div>
 
-    <div class="flex items-center justify-between mt-auto pt-1">
-      <span class="text-primary-text font-extrabold text-lg tracking-tight">
+    <div class="flex flex-wrap @container items-center text-3xl md:text-3xl  justify-between mt-auto pt-1">
+      <span class="text-accent font-display tracking-tight">
         {precio(startingPrice)}
         {product.qty_label && (
           <span class="ml-2 text-[10px] font-bold text-primary-text/60 uppercase tracking-widest">
@@ -90,7 +90,7 @@ const hasImage = !!product.image?.url;
         )}
       </span>
 
-      {canOrder && <AddButton variant="pill" text="AGREGAR" />}
+      {canOrder && <AddButton variant="pill" text="AGREGAR" class="@max-[200px]:w-full md:w-auto text-lg justify-center" />}
     </div>
   </div>
 </div>

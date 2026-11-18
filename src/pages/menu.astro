@@ -154,9 +154,10 @@ const hoursJson =
           categories={cats("block-3")}
           decorations={theme.blocks?.["block-3"]}
           canOrder={canOrder}
-          outerClass="relative grid-cols-1 md:grid-cols-12 gap-x-12 gap-y-8 items-start"
-          categorySectionClass="col-span-1 md:col-span-8"
-          cardsClass="grid-cols-2 md:grid-cols-3 gap-8"
+          outerClass="grid-cols-4 md:grid-cols-12 gap-x-12 gap-y-16"
+          categorySectionClass="col-span-3 md:col-span-10"
+          cardsClass="grid-cols-2 md:grid-cols-3 justify-items-center gap-8"
+          sectionAttrs={{ "data-block-2": "" }}
         />
 
         <!-- block-2: plain categories, single column → 2-up cards (antepenúltimo) -->

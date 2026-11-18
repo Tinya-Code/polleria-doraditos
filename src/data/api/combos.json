@@ -5,12 +5,12 @@
       "name": "Super Combo",
       "description": "1 Pollo + 1/2 Pollo + Papas + Ensalada + Cremas",
       "image": {
-        "url": "https://picsum.photos/seed/doraditos-super-combo/600/400",
+        "url": "/images/menu/combos/wvc8wg6m9saimiqekvf0.webp",
         "alt": "Super Combo — Doraditos"
       },
       "price": 80.0,
       "price_before": null,
-      "card": "combo-card"
+      "card": "combo-card-pizza"
     },
     {
       "id": "combo-doradito",
@@ -22,19 +22,19 @@
       },
       "price": 75.0,
       "price_before": null,
-      "card": "combo-card"
+      "card": "combo-card-pizza"
     },
     {
       "id": "combo-familiar",
       "name": "Combo Familiar",
       "description": "1 Pollo + Papa + Ensalada + Cremas + Gaseosa 1.5 Lt.",
       "image": {
-        "url": "https://picsum.photos/seed/doraditos-combo-familiar-real/600/400",
+        "url": "https://res.cloudinary.com/dzdlyynhv/image/upload/v1784820272/tinyafood/cg6nrkhzjmyobzhkcuxj.png",
         "alt": "Combo Familiar — Doraditos"
       },
       "price": 65.0,
       "price_before": null,
-      "card": "combo-card"
+      "card": "combo-card-pizza"
     },
     {
       "id": "combo-duo",
@@ -46,7 +46,7 @@
       },
       "price": 33.0,
       "price_before": null,
-      "card": "combo-card"
+      "card": "combo-card-pizza"
     },
     {
       "id": "combo-personal",
@@ -58,7 +58,7 @@
       },
       "price": 17.0,
       "price_before": null,
-      "card": "combo-card"
+      "card": "combo-card-pizza"
     }
   ]
 }

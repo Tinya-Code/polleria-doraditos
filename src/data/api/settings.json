@@ -2,8 +2,8 @@
   "data": {
     "name": "Pollos a la Brasa Doraditos",
     "phone": "+51 919 750 931",
-    "address": "Av. Lima 1234, Lima, Perú",
-    "geo": { "lat": -12.0464, "lng": -77.0428 },
+    "address": "Av. Manchay, Pachacamac - Curva de Motocross",
+    "geo": { "lat": -12.10015634576697, "lng": -76.8758455094997 },
     "whatsapp": {
       "number": "+51 987 654 321",
       "message_template": "Hola, quiero pedir pollería para delivery:",
@@ -27,14 +27,14 @@
         { "id": "surco", "name": "Santiago de Surco", "fee": 7 }
       ]
     },
-    "payment_methods": ["yape", "plin", "visa", "mastercard", "efectivo"],
+    "payment_methods": ["yape", "plin", "visa", "efectivo"],
     "max_order_quantity": 20,
     "social_media": {
-      "tiktok": "https://tiktok.com/@polleriadoraditos",
-      "instagram": "https://instagram.com/polleriadoraditos",
-      "facebook": "https://facebook.com/polleriadoraditos"
+      "tiktok": "https://www.tiktok.com/@polleria.doradts.manchay",
+      "instagram": "",
+      "facebook": "https://www.facebook.com/polleria.doradito.1"
     },
-    "google_maps": "https://maps.app.goo.gl/polleriadoraditos",
+    "google_maps": "https://maps.app.goo.gl/rW7VRajH7FqXUDTk9",
     "business_hours": {
       "mon": { "isOpen": true, "open": "11:00", "close": "22:00" },
       "tue": { "isOpen": true, "open": "11:00", "close": "22:00" },
@@ -51,7 +51,7 @@
       "title_template": "%s | Pollería Doraditos",
       "description": "El mejor pollo a la brasa de Lima con delivery a domicilio. Combos familiares y promociones.",
       "keywords": ["pollo a la brasa", "pollería lima", "delivery de pollo", "combos familiares"],
-      "og_image": "https://picsum.photos/seed/doraditos-og/1200/630",
+      "og_image": "/images/logo-polleria-doraditos.png",
       "twitter_card": "summary_large_image",
       "locale": "es_PE",
       "canonical_url": null,
