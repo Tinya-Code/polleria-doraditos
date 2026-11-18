@@ -58,7 +58,7 @@ const overlayTo = revealCfg.overlay_to ?? 0.7;
 const overlayRangeVh = revealCfg.overlay_range_vh ?? 45;
 
 // Brand lockup — the last word of the name (DORADITOS) is rendered in gold.
-// Allusive gallo-chef image beside the name; falls back to the logo if it
+// Allusive gallo-chef image above the name; falls back to the logo if it
 // ever fails to load.
 const heroImageSrc = "/images/gallo-chef.webp";
 const logoFallbackSrc = "/images/logo-polleria-doraditos.png";
@@ -108,7 +108,7 @@ const nameAccent = splitName ? nameWords[nameWords.length - 1] : nameWords[0] ??
 
   <div class="relative z-10 max-w-3xl mx-auto space-y-7">
     <!-- Brand lockup: allusive image + name (column on mobile, row from sm up) -->
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 text-left">
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 text-center sm:text-left">
       <div class="relative flex items-center justify-center shrink-0">
         <span
           class="absolute w-36 h-36 sm:w-44 sm:h-44 md:w-52 md:h-52 rounded-full bg-primary/35 blur-3xl"

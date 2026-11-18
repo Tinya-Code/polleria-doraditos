@@ -280,7 +280,7 @@
                 "name": "Bistec a la Parrilla",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-bistec-parrilla/600/400",
+                  "url": "/images/menu/platos-carta/bistec-parrilla.webp",
                   "alt": "Bistec a la Parrilla — Doraditos"
                 },
                 "price": 20.0,
@@ -310,7 +310,7 @@
                 "name": "Churrasco a la Parrilla",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-churrasco-parrilla/600/400",
+                  "url": "/images/menu/platos-carta/churrasco.webp",
                   "alt": "Churrasco a la Parrilla — Doraditos"
                 },
                 "price": 18.0,
@@ -325,7 +325,7 @@
                 "name": "Churrasco a lo Pobre",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-churrasco-pobre/600/400",
+                  "url": "/images/menu/platos-carta/churrasco-pobre.webp",
                   "alt": "Churrasco a lo Pobre — Doraditos"
                 },
                 "price": 23.0,
