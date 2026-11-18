@@ -15,7 +15,7 @@
                 "name": "1 Pollo + Papa + Ensalada + Cremas",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-combo-1-pollo/600/400",
+                  "url": "https://res.cloudinary.com/dzdlyynhv/image/upload/v1784819990/tinyafood/vfqf3exkwl7qnvqtmyd6.png",
                   "alt": "1 Pollo — Doraditos"
                 },
                 "price": 55.0,
@@ -45,7 +45,7 @@
                 "name": "1/4 Pollo + Papa + Ensalada + Cremas",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-combo-1-4/600/400",
+                  "url": "https://res.cloudinary.com/dzdlyynhv/image/upload/v1784873250/tinyafood/xkyaehyo99xnzallsuaz.png",
                   "alt": "1/4 Pollo — Doraditos"
                 },
                 "price": 16.0,
@@ -60,7 +60,7 @@
                 "name": "1/2 Pollo + Papa + Ensalada + Cremas",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-combo-1-2/600/400",
+                  "url": "https://res.cloudinary.com/dzdlyynhv/image/upload/v1784822646/tinyafood/rmuy1zxasnhxdjwjynxr.png",
                   "alt": "1/2 Pollo — Doraditos"
                 },
                 "price": 30.0,
@@ -88,7 +88,7 @@
                 "name": "Broaster Pecho",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-broaster-pecho/600/400",
+                  "url": "/images/frituras/Pollo_a_la_brasa_poster_a570dfb1.webp",
                   "alt": "Broaster Pecho — Doraditos"
                 },
                 "price": 13.0,
@@ -103,7 +103,7 @@
                 "name": "Broaster Pierna",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-broaster-pierna/600/400",
+                  "url": "/images/frituras/Pollo_a_la_brasa_poster_a570dfb1.webp",
                   "alt": "Broaster Pierna — Doraditos"
                 },
                 "price": 10.0,
@@ -118,7 +118,7 @@
                 "name": "Broaster Entrepierna",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-broaster-entrepierna/600/400",
+                  "url": "/images/frituras/Pollo_a_la_brasa_poster_a570dfb1.webp",
                   "alt": "Broaster Entrepierna — Doraditos"
                 },
                 "price": 11.0,
@@ -133,7 +133,7 @@
                 "name": "Broaster a lo Mostro",
                 "description": "Chaufa + Papa y Ensalada",
                 "image": {
-                  "url": "/images/menu/platos-carta/lomo-saltado.webp",
+                  "url": "https://res.cloudinary.com/dzdlyynhv/image/upload/v1784268883/tinyafood/aduigx7flgmrtlkicpcr.png",
                   "alt": "Broaster a lo Mostro — Doraditos"
                 },
                 "price": 15.0,
@@ -148,7 +148,7 @@
                 "name": "Salchipapas",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-salchipapas/600/400",
+                  "url": "https://res.cloudinary.com/dzdlyynhv/image/upload/v1784313280/tinyafood/xhnrh2i6a5a6a7ir3rvo.png",
                   "alt": "Salchipapas — Doraditos"
                 },
                 "price": 10.0,
@@ -163,7 +163,7 @@
                 "name": "Salchipollo de 1/4 (Pierna)",
                 "description": "1/4 Pollo + Salchicha + Papa + Ensalada",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-salchipollo-1-4/600/400",
+                  "url": "https://res.cloudinary.com/dzdlyynhv/image/upload/v1784862238/tinyafood/qdlny6hrkrrmjc4ql15e.png",
                   "alt": "Salchipollo 1/4 — Doraditos"
                 },
                 "price": 20.0,
@@ -178,7 +178,7 @@
                 "name": "Salchipollo de 1/8 Pollo",
                 "description": "1/8 Pollo + Salchicha + Papa + Ensalada",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-salchipollo-1-8/600/400",
+                  "url": "https://res.cloudinary.com/dzdlyynhv/image/upload/v1784862238/tinyafood/qdlny6hrkrrmjc4ql15e.png",
                   "alt": "Salchipollo 1/8 — Doraditos"
                 },
                 "price": 15.0,
@@ -369,7 +369,7 @@
                 "name": "Mostrito 1/4 Pollo",
                 "description": "Chaufa + Papa y Ensalada",
                 "image": {
-                  "url": "/images/menu/platos-carta/lomo-saltado.webp",
+                  "url": "https://res.cloudinary.com/dzdlyynhv/image/upload/v1784274444/tinyafood/nvnlwmy2acjpm6eqjcct.png",
                   "alt": "Mostrito 1/4 Pollo — Doraditos"
                 },
                 "price": 17.0,
@@ -384,7 +384,7 @@
                 "name": "Mostrito 1/8 Pollo",
                 "description": "Chaufa + Papa",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-mostrito-1-8/600/400",
+                  "url": "https://res.cloudinary.com/dzdlyynhv/image/upload/v1784822113/tinyafood/aueqmepj6fl2oqtfgmyq.png",
                   "alt": "Mostrito 1/8 Pollo — Doraditos"
                 },
                 "price": 12.0,
@@ -459,7 +459,7 @@
                 "name": "Aeropuerto de Pollo",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-aeropuerto-pollo/600/400",
+                  "url": "/images/menu/chaufas/Pollo_a_la_brasa_poster_a570dfb1 (1).webp",
                   "alt": "Aeropuerto de Pollo — Doraditos"
                 },
                 "price": 12.0,
@@ -474,7 +474,7 @@
                 "name": "Aeropuerto de Carne",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-aeropuerto-carne/600/400",
+                  "url": "/images/menu/chaufas/Pollo_a_la_brasa_poster_a570dfb1 (1).webp",
                   "alt": "Aeropuerto de Carne — Doraditos"
                 },
                 "price": 14.0,
@@ -489,7 +489,7 @@
                 "name": "Aeropuerto Mixto",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-aeropuerto-mixto/600/400",
+                  "url": "/images/menu/chaufas/Pollo_a_la_brasa_poster_a570dfb1 (1).webp",
                   "alt": "Aeropuerto Mixto — Doraditos"
                 },
                 "price": 14.0,
@@ -504,7 +504,7 @@
                 "name": "Aeropuerto Salvaje",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-aeropuerto-salvaje/600/400",
+                  "url": "/images/menu/chaufas/Pollo_a_la_brasa_poster_a570dfb1 (1).webp",
                   "alt": "Aeropuerto Salvaje — Doraditos"
                 },
                 "price": 14.0,
@@ -532,10 +532,10 @@
             "products": [
               {
                 "id": "gaseosa-1-5l",
-                "name": "Gaseosa 1.5 Lt",
+                "name": "Gaseosa coca cola 1.5 Lt",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-gaseosa-1-5/600/400",
+                  "url": "/images/menu/bebidas/2146463131 (2).webp",
                   "alt": "Gaseosa 1.5 Lt — Doraditos"
                 },
                 "price": 10.0,
@@ -547,10 +547,10 @@
               },
               {
                 "id": "gaseosa-1l",
-                "name": "Gaseosa 1 Lt",
+                "name": "Gaseosa inka cola 1 Lt",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-gaseosa-1/600/400",
+                  "url": "/images/menu/bebidas/sku_inca_kola_1_5l_5443qjCIQQTs_main (1).webp",
                   "alt": "Gaseosa 1 Lt — Doraditos"
                 },
                 "price": 6.0,
@@ -565,7 +565,7 @@
                 "name": "Gordita",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-gordita/600/400",
+                  "url": "/images/menu/bebidas/inca-cola.png",
                   "alt": "Gordita — Doraditos"
                 },
                 "price": 5.0,
@@ -580,7 +580,7 @@
                 "name": "Gaseosa Personal",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-gaseosa-personal/600/400",
+                  "url": "/images/menu/bebidas/inca-kola (1).webp",
                   "alt": "Gaseosa Personal — Doraditos"
                 },
                 "price": 2.5,
@@ -595,7 +595,7 @@
                 "name": "Chicha 1 Lt",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-chicha-1/600/400",
+                  "url": "/images/menu/bebidas/chicha-morada (1).webp",
                   "alt": "Chicha 1 Lt — Doraditos"
                 },
                 "price": 10.0,
@@ -610,7 +610,7 @@
                 "name": "Chicha 1/2 Lt",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-chicha-1-2/600/400",
+                  "url": "/images/menu/bebidas/chicha-morada (1).webp",
                   "alt": "Chicha 1/2 Lt — Doraditos"
                 },
                 "price": 6.0,
@@ -625,7 +625,7 @@
                 "name": "Vaso (Chicha)",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-chicha-vaso/600/400",
+                  "url": "/images/menu/bebidas/vaso-chicha.webp",
                   "alt": "Vaso de Chicha — Doraditos"
                 },
                 "price": 2.5,
@@ -640,7 +640,7 @@
                 "name": "Maracuyá 1 Lt",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-maracuya-1/600/400",
+                  "url": "/images/menu/bebidas/maracuya (1).webp",
                   "alt": "Maracuyá 1 Lt — Doraditos"
                 },
                 "price": 10.0,
@@ -655,7 +655,7 @@
                 "name": "Maracuyá 1/2 Lt",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-maracuya-1-2/600/400",
+                  "url": "/images/menu/bebidas/maracuya (1).webp",
                   "alt": "Maracuyá 1/2 Lt — Doraditos"
                 },
                 "price": 6.0,
@@ -670,7 +670,7 @@
                 "name": "Vaso (Maracuyá)",
                 "description": "",
                 "image": {
-                  "url": "https://picsum.photos/seed/doraditos-maracuya-vaso/600/400",
+                  "url": "/images/menu/bebidas/vaso-maracuya.png",
                   "alt": "Vaso de Maracuyá — Doraditos"
                 },
                 "price": 2.5,
@@ -682,7 +682,8 @@
               }
             ]
           }
-        ]
+        ],              "range-with-image": "product-card",
+              "range-no-image": "product-card-row"
       }
     ]
   }

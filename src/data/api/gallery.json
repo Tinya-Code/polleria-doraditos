@@ -1,11 +1,131 @@
 {
   "data": [
-    { "id": "gal-1", "title": "Pollo a la Brasa Familiar", "category": "Platos", "type": "image", "url": "https://picsum.photos/seed/doraditos-gal-1/800/600", "alt": "Pollo a la Brasa Familiar — Doraditos", "description": "Nuestro pollo a la brasa en porción familiar con papas y ensalada." },
-    { "id": "gal-2", "title": "1/2 Pollo a la Brasa", "category": "Platos", "type": "image", "url": "https://picsum.photos/seed/doraditos-gal-2/800/600", "alt": "1/2 Pollo a la Brasa — Doraditos", "description": "Media porción de pollo a la brasa con acompañamientos." },
-    { "id": "gal-3", "title": "Papas Fritas", "category": "Acompañamientos", "type": "image", "url": "https://picsum.photos/seed/doraditos-gal-3/800/600", "alt": "Papas Fritas — Doraditos", "description": "Papas fritas crujientes, el acompañamiento clásico." },
-    { "id": "gal-4", "title": "Ensalada de la Casa", "category": "Acompañamientos", "type": "image", "url": "https://picsum.photos/seed/doraditos-gal-4/800/600", "alt": "Ensalada de la Casa — Doraditos", "description": "Ensalada fresca con lechuga, tomate y zanahoria." },
-    { "id": "gal-5", "title": "Arroz Chaufa", "category": "Acompañamientos", "type": "image", "url": "https://picsum.photos/seed/doraditos-gal-5/800/600", "alt": "Arroz Chaufa — Doraditos", "description": "Arroz chaufa estilo peruano con pollo y verduras." },
-    { "id": "gal-6", "title": "Delivery en Acción", "category": "Local", "type": "video", "url": "https://www.w3schools.com/html/mov_bbb.mp4", "poster": "https://picsum.photos/seed/doraditos-gal-6-poster/800/450", "aspect_ratio": "9/16", "alt": "Delivery — Doraditos", "description": "Nuestro equipo de delivery listo para llevar tu pedido." },
-    { "id": "gal-7", "title": "Interior del Local", "category": "Ambiente", "type": "image", "url": "https://picsum.photos/seed/doraditos-gal-7/800/600", "alt": "Interior del Local — Doraditos", "description": "Ambiente acogedor de la Pollería Doraditos." }
+    {
+      "id": "gal-1",
+      "title": "Plato Doraditos 1",
+      "category": "Platos",
+      "type": "image",
+      "url": "/images/galeria/plato-foto-1.jpeg",
+      "alt": "Plato Doraditos 1",
+      "description": "Uno de nuestros platos de la casa."
+    },
+    {
+      "id": "gal-2",
+      "title": "Plato Doraditos 2",
+      "category": "Platos",
+      "type": "image",
+      "url": "/images/galeria/plato-foto-2.jpeg",
+      "alt": "Plato Doraditos 2",
+      "description": "Uno de nuestros platos de la casa."
+    },
+    {
+      "id": "gal-3",
+      "title": "Plato Doraditos 3",
+      "category": "Platos",
+      "type": "image",
+      "url": "/images/galeria/plato-foto-3.jpeg",
+      "alt": "Plato Doraditos 3",
+      "description": "Uno de nuestros platos de la casa."
+    },
+    {
+      "id": "gal-4",
+      "title": "Plato Doraditos 4",
+      "category": "Platos",
+      "type": "image",
+      "url": "/images/galeria/plato-foto-4.jpeg",
+      "alt": "Plato Doraditos 4",
+      "description": "Uno de nuestros platos de la casa."
+    },
+    {
+      "id": "gal-5",
+      "title": "Plato Doraditos 5",
+      "category": "Platos",
+      "type": "image",
+      "url": "/images/galeria/plato-foto-5.jpeg",
+      "alt": "Plato Doraditos 5",
+      "description": "Uno de nuestros platos de la casa."
+    },
+    {
+      "id": "gal-6",
+      "title": "Plato Doraditos 6",
+      "category": "Platos",
+      "type": "image",
+      "url": "/images/galeria/plato-foto-6.jpeg",
+      "alt": "Plato Doraditos 6",
+      "description": "Uno de nuestros platos de la casa."
+    },
+    {
+      "id": "gal-7",
+      "title": "Plato Doraditos 7",
+      "category": "Platos",
+      "type": "image",
+      "url": "/images/galeria/plato-foto-7.jpeg",
+      "alt": "Plato Doraditos 7",
+      "description": "Uno de nuestros platos de la casa."
+    },
+    {
+      "id": "gal-8",
+      "title": "Plato Doraditos 8",
+      "category": "Platos",
+      "type": "image",
+      "url": "/images/galeria/plato-foto-8.jpeg",
+      "alt": "Plato Doraditos 8",
+      "description": "Uno de nuestros platos de la casa."
+    },
+    {
+      "id": "gal-9",
+      "title": "Local Doraditos 1",
+      "category": "Local",
+      "type": "image",
+      "url": "/images/galeria/local-foto-1.jpeg",
+      "alt": "Local Doraditos 1",
+      "description": "Espacio de la Pollería Doraditos."
+    },
+    {
+      "id": "gal-10",
+      "title": "Local Doraditos 2",
+      "category": "Local",
+      "type": "image",
+      "url": "/images/galeria/local-foto-2.jpeg",
+      "alt": "Local Doraditos 2",
+      "description": "Espacio de la Pollería Doraditos."
+    },
+    {
+      "id": "gal-11",
+      "title": "Local Doraditos 3",
+      "category": "Local",
+      "type": "image",
+      "url": "/images/galeria/local-foto-3.jpeg",
+      "alt": "Local Doraditos 3",
+      "description": "Espacio de la Pollería Doraditos."
+    },
+    {
+      "id": "gal-12",
+      "title": "Local Doraditos 4",
+      "category": "Local",
+      "type": "image",
+      "url": "/images/galeria/local-foto-4.jpeg",
+      "alt": "Local Doraditos 4",
+      "description": "Espacio de la Pollería Doraditos."
+    },
+    {
+      "id": "gal-13",
+      "title": "Local Doraditos 5",
+      "category": "Local",
+      "type": "image",
+      "url": "/images/galeria/local-foto-5.jpeg",
+      "alt": "Local Doraditos 5",
+      "description": "Espacio de la Pollería Doraditos."
+    },
+       {
+      "id": "gal-14",
+      "title": "Delivery en Acción",
+      "category": "Tiktok",
+      "type": "embed",
+      "url": "https://www.tiktok.com/player/v1/7704858044626144530?_r=1&_t=ZS-9BUkKIQBWtx",
+      "aspect_ratio": "9/16",
+      "alt": "Delivery — Doraditos",
+      "description": "Nuestro equipo de delivery listo para llevar tu pedido."
+    }
   ]
 }
