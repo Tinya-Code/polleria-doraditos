@@ -31,13 +31,13 @@
     },
     "google_maps": "https://maps.app.goo.gl/rW7VRajH7FqXUDTk9",
     "business_hours": {
-      "mon": { "isOpen": true, "open": "17:00", "close": "23:00" },
-      "tue": { "isOpen": false, "open": "17:00", "close": "23:00" },
-      "wed": { "isOpen": true, "open": "16:00", "close": "22:00" },
-      "thu": { "isOpen": true, "open": "17:00", "close": "23:00" },
-      "fri": { "isOpen": true, "open": "17:00", "close": "23:30" },
-      "sat": { "isOpen": true, "open": "17:00", "close": "23:30" },
-      "sun": { "isOpen": true, "open": "17:00", "close": "23:00" }
+      "mon": { "isOpen": true, "open": "17:30", "close": "23:30" },
+      "tue": { "isOpen": false, "open": "17:30", "close": "23:30" },
+      "wed": { "isOpen": true, "open": "17:30", "close": "22:30" },
+      "thu": { "isOpen": true, "open": "17:30", "close": "23:30" },
+      "fri": { "isOpen": true, "open": "17:30", "close": "23:30" },
+      "sat": { "isOpen": true, "open": "17:30", "close": "23:30" },
+      "sun": { "isOpen": true, "open": "11:30", "close": "23:30" }
     },
     "tags": ["pollo a la brasa", "delivery", "familiar", "peruano"],
     "seo": {

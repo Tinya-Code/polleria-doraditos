@@ -380,7 +380,7 @@
             "products": [
               {
                 "id": "mostrito-1-4",
-                "name": "Mostrito 1/4 Pollo",
+                "name": "Mostro 1/4 Pollo",
                 "description": "Chaufa + Papa y Ensalada",
                 "image": {
 
@@ -388,7 +388,7 @@
 
                   "alt": "Mostrito 1/4 Pollo — Doraditos"
                 },
-                "price": 17.0,
+                "price": 18.0,
                 "price_range": null,
                 "qty_label": null,
                 "is_recommended": true,
@@ -435,7 +435,7 @@
                   "url": "/images/menu/chaufas/chaufa-carne.webp",
                   "alt": "Chaufa de Carne — Doraditos"
                 },
-                "price": 13.0,
+                "price": 14.0,
                 "price_range": null,
                 "qty_label": null,
                 "is_recommended": false,

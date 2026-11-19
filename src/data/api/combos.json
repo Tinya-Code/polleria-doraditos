@@ -48,7 +48,7 @@
         "alt": "Combo Dúo — Doraditos"
       },
       "includes": ["1/2 Pollo", "Cremas", "Ensalada", "Papa", "Gaseosa Gordita"],
-      "price": 33.0,
+      "price": 33.90,
       "price_before": null,
       "card": "combo-card-pizza"
     },
@@ -61,7 +61,7 @@
         "alt": "Combo Personal — Doraditos"
       },
       "includes": ["1/4 de Pollo", "Gaseosa Personal"],
-      "price": 17.0,
+      "price": 18.0,
       "price_before": null,
       "card": "combo-card-pizza"
     }
